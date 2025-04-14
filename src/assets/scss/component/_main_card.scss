@@ -1,0 +1,42 @@
+.card{
+  max-width: unset;
+  padding:0;
+}
+& > .card {
+  max-width: unset;
+
+  border: 1px solid var(--apbd-border-color,rgba(26, 201, 139, 0.1));
+  box-shadow: 0 0 37px 19px var(--apbd-main-card-shadow);
+  &, .card-body > .app-container {
+    border-radius: var(--apbd-brs-main, 15px);
+  }
+
+
+  .card-body {
+    overflow: hidden;
+
+    .app-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: normal;
+      align-items: stretch;
+      align-content: stretch;
+      width: 100%;
+
+      > div {
+        &.app-side-menu{
+          border-top-left-radius: var(--apbd-brs-main,15px);
+          border-bottom-left-radius: var(--apbd-brs-main,15px);
+        }
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+
+      }
+    }
+  }
+}

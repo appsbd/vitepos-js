@@ -1,0 +1,17 @@
+.module-loader {
+  position: relative;
+  .loader-content {
+    z-index: 9999;
+    position: unset;
+    top: 50%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background: var(--eg-loader-bg);
+    >span{
+      padding: 1rem;
+      display: block;
+    }
+  }
+}

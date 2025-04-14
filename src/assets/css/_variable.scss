@@ -1,0 +1,17 @@
+@function str-replace($string, $search, $replace: '') {
+  $string:$string+'';
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}
+$main_color:#1c94ff;// #1c94ff;;//#c91b3b;#2563EB, //Green #1AC98B
+$main_content_bg: rgba($main_color,0.01);
+$main_border_color: rgba($main_color,0.25);
+$main_content_header-box-shadow: rgba($main_color,0.5);
+$svg_color:str-replace($main_color,'#','%23');
+$svg_color_darker:str-replace(darken($main_color,20),'#','%23');
+$button_color:#fff;
+$button_bg_color:$main_color;
+$button_bg_hover:darken($main_color,10);

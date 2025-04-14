@@ -1,0 +1,22 @@
+#appsbd-app {
+  --eg-border-radius:5px;
+  --eg-bg: var(--eg-border-radius);//its border radius
+
+  --eg-shodow-rule: 0px 3px 20px -19px #{rgba($main_color,0.6)};
+  --eg-shodow-color: #{rgba($main_color,0.6)};
+  --eg-loader-bg: rgba(0, 0, 0, 0.55);
+  --eg-cell-header-color:#{rgba($main_color,0.05)};
+  --eg-no-record-color: #{rgba($main_color,0.8)};
+  --eg-row-group-title-color: #41444b;
+  --eg-cell-index-color: #7f848d;
+  --eg-table-border-color: #{rgba(darken($main_color,10%),0.10)};;
+  --eg-hover-bg: #{rgba($main_color,0.02)};
+  --eg-pg-border-color:#ccc;
+  --eg-pg-btn-action-size:40px;
+  --eg-pg-btn-action-size: 40px;
+  --eg-pg-btn-bg: #{$button_bg_color};
+  --eg-pg-btn-color: #{$button_color};;
+  --eg-pg-shodow-color: #ccc;
+  --eg-pg-btn-size:30px;
+  --eg-pagination-shadow: #{rgba($main_color,0.6)};
+}

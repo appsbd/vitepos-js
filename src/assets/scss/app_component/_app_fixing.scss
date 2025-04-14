@@ -1,0 +1,143 @@
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes rotate3dAnimation {
+  0% {transform: rotateY(0deg);}
+  100% {transform: rotateY(360deg);}
+}
+.app-content-body {
+  min-height: calc(100vh - 180px);
+}
+.apbd-app-logo {
+  &:hover{
+    a > i.vps{
+      animation: rotate3dAnimation 0.5s linear 1;
+
+    }
+  }
+  a {
+    flex-direction: column;
+    margin-top: 15px;
+    @include transition(all 500ms ease);
+
+    > i.vps {
+      @include transition(font-size 500ms ease-in-out);
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.31);
+      transform: rotateY(0deg);
+      margin-right: 0px;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    svg{
+      color:var(--apbd-logo-shape-bg3);
+
+    }
+    .apbd-app-title {
+      white-space: nowrap;
+      color: #fff;
+      display: block;
+      font-size: 1rem;
+      margin: 0;
+      text-shadow: 0 0 7px rgba(0, 0, 0, 0.31);
+    }
+  }
+}
+.divider-after{
+  display: block;
+  margin: -4px 2rem 0px 2rem;
+
+  height: 5px;
+  border-bottom: 1px dotted var(--apbd-btn-bg-color);
+  opacity: 0.7;
+}
+
+.app-container.mini-menu{
+  .btn-icon{
+    justify-content: center;
+    margin: 0;
+    >i{
+      border:none;
+      margin: 0;
+      padding: 0;
+    }
+    i+span{
+      display: none;
+    }
+
+  }
+  .apbd-app-logo {
+    a {
+      margin-top: 5px;
+      > i.vps {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .divider-after{
+    margin: -4px 1rem 0px 1rem;
+  }
+}
+
+.app-content-wrapper .app-content-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total_activity{
+  white-space: nowrap;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 20px 20px;
+  position: relative;
+  background: #7cc4f7;
+  &.total-orders{
+    background: #9e71cb;
+  }
+  &.by-cash{
+    background: #1DE9B6;
+  }
+  &:hover{
+    background: #3b76ef;
+  }
+}
+.outlet-info-pnl{
+  table{
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+.top-5-product{
+  div{
+    border-bottom: 1px solid #dee2e6;
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}

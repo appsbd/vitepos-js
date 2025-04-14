@@ -1,0 +1,70 @@
+.nav.apbd-tab-nav{
+  @include max-screen(575px) {
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    margin-bottom: 0;
+  }
+}
+.apbd-tab-btn {
+  margin-right: 1rem;
+  display: flex;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--apbd-btn-bg-hover);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: 1px solid var(--apbd-btn-bg-color);
+  white-space: nowrap;
+  padding: .375rem .75rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  @include max-screen(575px){
+    padding: .215rem .45rem;
+    font-size: 0.9rem;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  background-color: transparent;
+  border-color: var(--apbd-btn-bg-color);
+  &:hover {
+    color: var(--apbd-btn-color, #fff);
+    background-color: var(--apbd-btn-bg-hover);
+    border-color: var(--apbd-btn-bg-hover);
+  }
+  &.apbd-active {
+    color: var(--apbd-btn-color, #fff);
+    background-color: var(--apbd-btn-bg-color);
+    border-color: var(--apbd-btn-bg-color);
+
+  }
+  >i,>svg{
+    margin-right: 10px;
+  }
+  >svg {
+    height: 100%;
+    max-height: 14px;
+    object-fit: cover;
+    width: 14px;
+  }
+
+  /*color: var(--apbd-btn-color, #fff);
+  background-color: var(--apbd-btn-bg-color);
+  border-color: var(--apbd-btn-bg-color);
+
+  &:hover {
+    background-color: var(--apbd-btn-bg-hover);
+    border-color: var(--apbd-btn-bg-hover);
+  }*/
+}

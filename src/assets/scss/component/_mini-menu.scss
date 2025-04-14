@@ -1,0 +1,64 @@
+.app-container.mini-menu{
+
+  .apbd-app-title,.hide-in-mini-menu{
+    display: none;
+  }
+  .apbd-app-logo{
+    min-height: 72px;
+  }
+  .app-side-menu {
+    width: var(--apbd-mini-menu-width, 80px);
+    @include max-screen(575px){
+      width:0;
+      opacity: 0;
+      display: none;
+      overflow: hidden;
+    }
+    .app-side-menu-main {
+      ul.apbd-main-menu {
+        > li {
+          > a {
+            &[data-bs-toggle="collapse"]::after{
+              display: none;
+            }
+            >svg,>i{
+              font-size: 24px;
+              margin: 0 !important;
+            }
+            > .apbd-menu-title, span {
+              display: none;
+            }
+            &[aria-expanded="true"]{
+              border-bottom-left-radius: 0;
+              border-bottom-right-radius: 0;
+            }
+
+          }
+          a + {
+            .collapse , .collapsing {
+              padding: 10px 0;
+              margin-top: 0;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+              ul.btn-toggle-nav {
+                > li {
+                  > a {
+                    display: inline-flex;
+                    >*{
+                      margin: 0;
+                    }
+                    > .apbd-menu-title, span {
+                      display: none;
+                    }
+                  }
+                }
+              }
+
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

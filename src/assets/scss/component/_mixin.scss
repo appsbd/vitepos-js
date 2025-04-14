@@ -1,0 +1,38 @@
+@mixin max-screen($res-first, $res-last: $res-first) {
+  @if $res-first == $res-last {
+    @media screen and (max-width: if(unitless($res-first), $res-first*$units, $res-first)) {
+      @content;
+    }
+  } @else if $res-first < $res-last {
+    @media screen and (min-width: if(unitless($res-first), $res-first*$units, $res-first)) and (max-width: if(unitless($res-last), $res-last*$units, $res-last)) {
+      @content;
+    }
+  }
+}
+
+@mixin min-screen($res) {
+  @media screen and (min-width: if(unitless($res), $res*$units, $res)) {
+    @content;
+  }
+}
+
+@mixin transition($transistion:all 0.5s ease) {
+  -webkit-transition: $transistion;
+  -moz-transition: $transistion;
+  -ms-transition: $transistion;
+  -o-transition: $transistion;
+  transition: $transistion;
+}
+@mixin animation($animation:spin 4s linear infinite) {
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  animation: $animation;
+}
+@mixin apbd-linear-gradient($color1:rgb(34,193,195),$color2: rgba(28,155,156,1),$degree:100deg){
+  background:$color1;
+  background: linear-gradient($degree, $color1 0%, $color2 100%);
+}
+@mixin apbd-radial-gradient($color1:rgb(34,193,195),$color2: rgba(28,155,156,1)){
+  background:$color1;
+  background: radial-gradient(circle,$color1 0%, $color2 100%);
+}

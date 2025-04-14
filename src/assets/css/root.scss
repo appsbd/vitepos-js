@@ -1,0 +1,58 @@
+@import "variable";
+#appsbd-app {
+  --apbd-theme-color:#{$main_color};
+  --apbd-theme-content-bg:#{$main_content_bg};
+  --apbd-brs-main:15px;
+  --apbd-main-card-shadow:#{rgba($main_color,0.02)};;
+  --apbd-header-height:60px;
+  --apbd-content-footer-height:80px;
+  --apbd-logo-shape-bg1:#{lighten($main_color,20)};;
+  --apbd-logo-shape-bg2:#{darken($main_color,10)};;
+  --apbd-logo-shape-bg3:#{darken($main_color,20)};;
+  --apbd-settings-loader-bg1:#{rgba($main_color,0.5)};;
+  --apbd-settings-loader-bg2:#{rgba($main_color,0.2)};;
+
+  //btn theme
+  --apbd-btn-color:#{$button_color};
+  --apbd-btn-bg-color:#{$button_bg_color};
+  --apbd-btn-bg-disable-color:#{lighten($button_bg_color,20%)};
+  --apbd-btn-bg-hover:#{$button_bg_hover};
+  //menu bar
+  --apbd-menu-width:200px;
+  --apbd-menu-bg-color:#fff;
+  --apbd-chevron-color:#fff;
+  --apbd-submenu-body-bg:#{rgba($main_color,0.05)};;
+  --apbd-menu-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23808191' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  --apbd-menu-chevron_hover:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23FFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+
+  --apbd-sidebar-right-width:200px;
+  --apbd-mini-menu-width:80px;
+  --apbd-border-color: #{$main_border_color};
+
+  //input group
+  --apbd-input-text-bg:#{$main_border_color};
+
+  //switch
+  //'#{str-replace($section-gradient1,'#','%23')}'
+
+  --apbd-switch-bd-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='#{$svg_color}'/%3E%3C/svg%3E");
+
+  --apbd-switch-dark-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Ccircle fill='#{$svg_color}' cx='4' cy='4' r='3'/%3E%3Cpath fill='%23fff' d='M6,4.72H5.9A1.53,1.53,0,0,1,4.38,2.07a.08.08,0,0,0,0-.07.09.09,0,0,0,0-.06,2,2,0,0,0-1.3.26,2.12,2.12,0,0,0-1,1.26A2.07,2.07,0,0,0,2.29,5,2,2,0,0,0,3.55,6a1.67,1.67,0,0,0,.54.07A2,2,0,0,0,6,4.8.09.09,0,0,0,6,4.72Z'/%3E%3C/svg%3E");
+  --apbd-switch-dark-checked: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Ccircle fill='%23fff' cx='4' cy='4' r='3'/%3E%3Cpath fill='#{$svg_color}' d='M6,4.72H5.9A1.53,1.53,0,0,1,4.38,2.07a.08.08,0,0,0,0-.07.09.09,0,0,0,0-.06,2,2,0,0,0-1.3.26,2.12,2.12,0,0,0-1,1.26A2.07,2.07,0,0,0,2.29,5,2,2,0,0,0,3.55,6a1.67,1.67,0,0,0,.54.07A2,2,0,0,0,6,4.8.09.09,0,0,0,6,4.72Z'/%3E%3C/svg%3E");
+
+  //content header
+  --apbd-header-box-shadow:#{$main_content_header-box-shadow};
+
+  --apbd-card-defaulf-header-bg:#{rgba($main_color,0.08)};
+  --apbd-card-defaulf-body-bg:#{rgba($main_color,0.01)};
+
+
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+
+}
+@import "grid_root";

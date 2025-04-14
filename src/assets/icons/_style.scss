@@ -1,0 +1,555 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wi48yf');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?wi48yf#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?wi48yf') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?wi48yf') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?wi48yf##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.vps {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vps-vite-pos {
+  &:before {
+    content: $vps-vite-pos; 
+  }
+}
+.vps-vite-pos-full {
+  &:before {
+    content: $vps-vite-pos-full; 
+  }
+}
+.vps-vt-pos {
+  &:before {
+    content: $vps-vt-pos; 
+  }
+}
+.vps-airplay {
+  &:before {
+    content: $vps-airplay; 
+  }
+}
+.vps-alert-circle {
+  &:before {
+    content: $vps-alert-circle; 
+  }
+}
+.vps-alert-triangle {
+  &:before {
+    content: $vps-alert-triangle; 
+  }
+}
+.vps-arrow-down {
+  &:before {
+    content: $vps-arrow-down; 
+  }
+}
+.vps-arrow-down-circle {
+  &:before {
+    content: $vps-arrow-down-circle; 
+  }
+}
+.vps-arrow-down-left {
+  &:before {
+    content: $vps-arrow-down-left; 
+  }
+}
+.vps-arrow-down-right {
+  &:before {
+    content: $vps-arrow-down-right; 
+  }
+}
+.vps-arrow-left {
+  &:before {
+    content: $vps-arrow-left; 
+  }
+}
+.vps-arrow-left-circle {
+  &:before {
+    content: $vps-arrow-left-circle; 
+  }
+}
+.vps-arrow-right {
+  &:before {
+    content: $vps-arrow-right; 
+  }
+}
+.vps-arrow-right-circle {
+  &:before {
+    content: $vps-arrow-right-circle; 
+  }
+}
+.vps-arrow-up {
+  &:before {
+    content: $vps-arrow-up; 
+  }
+}
+.vps-arrow-up-circle {
+  &:before {
+    content: $vps-arrow-up-circle; 
+  }
+}
+.vps-arrow-up-left {
+  &:before {
+    content: $vps-arrow-up-left; 
+  }
+}
+.vps-arrow-up-right {
+  &:before {
+    content: $vps-arrow-up-right; 
+  }
+}
+.vps-bell {
+  &:before {
+    content: $vps-bell; 
+  }
+}
+.vps-bell-off {
+  &:before {
+    content: $vps-bell-off; 
+  }
+}
+.vps-check {
+  &:before {
+    content: $vps-check; 
+  }
+}
+.vps-check-circle {
+  &:before {
+    content: $vps-check-circle; 
+  }
+}
+.vps-check-square {
+  &:before {
+    content: $vps-check-square; 
+  }
+}
+.vps-chevron-down {
+  &:before {
+    content: $vps-chevron-down; 
+  }
+}
+.vps-chevron-left {
+  &:before {
+    content: $vps-chevron-left; 
+  }
+}
+.vps-chevron-right {
+  &:before {
+    content: $vps-chevron-right; 
+  }
+}
+.vps-chevron-up {
+  &:before {
+    content: $vps-chevron-up; 
+  }
+}
+.vps-chevrons-down {
+  &:before {
+    content: $vps-chevrons-down; 
+  }
+}
+.vps-chevrons-left {
+  &:before {
+    content: $vps-chevrons-left; 
+  }
+}
+.vps-chevrons-right {
+  &:before {
+    content: $vps-chevrons-right; 
+  }
+}
+.vps-chevrons-up {
+  &:before {
+    content: $vps-chevrons-up; 
+  }
+}
+.vps-circle {
+  &:before {
+    content: $vps-circle; 
+  }
+}
+.vps-clipboard {
+  &:before {
+    content: $vps-clipboard; 
+  }
+}
+.vps-clock {
+  &:before {
+    content: $vps-clock; 
+  }
+}
+.vps-code {
+  &:before {
+    content: $vps-code; 
+  }
+}
+.vps-copy {
+  &:before {
+    content: $vps-copy; 
+  }
+}
+.vps-corner-down-left {
+  &:before {
+    content: $vps-corner-down-left; 
+  }
+}
+.vps-crosshair {
+  &:before {
+    content: $vps-crosshair; 
+  }
+}
+.vps-database {
+  &:before {
+    content: $vps-database; 
+  }
+}
+.vps-disc {
+  &:before {
+    content: $vps-disc; 
+  }
+}
+.vps-edit {
+  &:before {
+    content: $vps-edit; 
+  }
+}
+.vps-edit-2 {
+  &:before {
+    content: $vps-edit-2; 
+  }
+}
+.vps-external-link {
+  &:before {
+    content: $vps-external-link; 
+  }
+}
+.vps-eye {
+  &:before {
+    content: $vps-eye; 
+  }
+}
+.vps-eye-off {
+  &:before {
+    content: $vps-eye-off; 
+  }
+}
+.vps-filter {
+  &:before {
+    content: $vps-filter; 
+  }
+}
+.vps-grid {
+  &:before {
+    content: $vps-grid; 
+  }
+}
+.vps-help-circle {
+  &:before {
+    content: $vps-help-circle; 
+  }
+}
+.vps-home {
+  &:before {
+    content: $vps-home; 
+  }
+}
+.vps-image {
+  &:before {
+    content: $vps-image; 
+  }
+}
+.vps-instagram {
+  &:before {
+    content: $vps-instagram; 
+  }
+}
+.vps-loader {
+  &:before {
+    content: $vps-loader; 
+  }
+}
+.vps-lock {
+  &:before {
+    content: $vps-lock; 
+  }
+}
+.vps-map-pin {
+  &:before {
+    content: $vps-map-pin; 
+  }
+}
+.vps-maximize {
+  &:before {
+    content: $vps-maximize; 
+  }
+}
+.vps-maximize-2 {
+  &:before {
+    content: $vps-maximize-2; 
+  }
+}
+.vps-message-circle {
+  &:before {
+    content: $vps-message-circle; 
+  }
+}
+.vps-message-square {
+  &:before {
+    content: $vps-message-square; 
+  }
+}
+.vps-minimize-2 {
+  &:before {
+    content: $vps-minimize-2; 
+  }
+}
+.vps-minus {
+  &:before {
+    content: $vps-minus; 
+  }
+}
+.vps-minus-circle {
+  &:before {
+    content: $vps-minus-circle; 
+  }
+}
+.vps-minus-square {
+  &:before {
+    content: $vps-minus-square; 
+  }
+}
+.vps-monitor {
+  &:before {
+    content: $vps-monitor; 
+  }
+}
+.vps-more-horizontal {
+  &:before {
+    content: $vps-more-horizontal; 
+  }
+}
+.vps-more-vertical {
+  &:before {
+    content: $vps-more-vertical; 
+  }
+}
+.vps-paperclip {
+  &:before {
+    content: $vps-paperclip; 
+  }
+}
+.vps-pause-circle {
+  &:before {
+    content: $vps-pause-circle; 
+  }
+}
+.vps-pie-chart {
+  &:before {
+    content: $vps-pie-chart; 
+  }
+}
+.vps-plus {
+  &:before {
+    content: $vps-plus; 
+  }
+}
+.vps-plus-circle {
+  &:before {
+    content: $vps-plus-circle; 
+  }
+}
+.vps-plus-square {
+  &:before {
+    content: $vps-plus-square; 
+  }
+}
+.vps-power {
+  &:before {
+    content: $vps-power; 
+  }
+}
+.vps-printer {
+  &:before {
+    content: $vps-printer; 
+  }
+}
+.vps-refresh-cw {
+  &:before {
+    content: $vps-refresh-cw; 
+  }
+}
+.vps-repeat {
+  &:before {
+    content: $vps-repeat; 
+  }
+}
+.vps-rotate-ccw {
+  &:before {
+    content: $vps-rotate-ccw; 
+  }
+}
+.vps-rotate-cw {
+  &:before {
+    content: $vps-rotate-cw; 
+  }
+}
+.vps-save {
+  &:before {
+    content: $vps-save; 
+  }
+}
+.vps-scissors {
+  &:before {
+    content: $vps-scissors; 
+  }
+}
+.vps-search {
+  &:before {
+    content: $vps-search; 
+  }
+}
+.vps-send {
+  &:before {
+    content: $vps-send; 
+  }
+}
+.vps-settings {
+  &:before {
+    content: $vps-settings; 
+  }
+}
+.vps-shield {
+  &:before {
+    content: $vps-shield; 
+  }
+}
+.vps-shopping-cart {
+  &:before {
+    content: $vps-shopping-cart; 
+  }
+}
+.vps-sliders {
+  &:before {
+    content: $vps-sliders; 
+  }
+}
+.vps-square {
+  &:before {
+    content: $vps-square; 
+  }
+}
+.vps-star {
+  &:before {
+    content: $vps-star; 
+  }
+}
+.vps-sun {
+  &:before {
+    content: $vps-sun; 
+  }
+}
+.vps-target {
+  &:before {
+    content: $vps-target; 
+  }
+}
+.vps-trash {
+  &:before {
+    content: $vps-trash; 
+  }
+}
+.vps-trash-2 {
+  &:before {
+    content: $vps-trash-2; 
+  }
+}
+.vps-trello {
+  &:before {
+    content: $vps-trello; 
+  }
+}
+.vps-unlock {
+  &:before {
+    content: $vps-unlock; 
+  }
+}
+.vps-user-plus {
+  &:before {
+    content: $vps-user-plus; 
+  }
+}
+.vps-users {
+  &:before {
+    content: $vps-users; 
+  }
+}
+.vps-wifi {
+  &:before {
+    content: $vps-wifi; 
+  }
+}
+.vps-wifi-off {
+  &:before {
+    content: $vps-wifi-off; 
+  }
+}
+.vps-x {
+  &:before {
+    content: $vps-x; 
+  }
+}
+.vps-x-circle {
+  &:before {
+    content: $vps-x-circle; 
+  }
+}
+.vps-x-square {
+  &:before {
+    content: $vps-x-square; 
+  }
+}
+.vps-zoom-in {
+  &:before {
+    content: $vps-zoom-in; 
+  }
+}
+.vps-zoom-out {
+  &:before {
+    content: $vps-zoom-out; 
+  }
+}
+.vps-display {
+  &:before {
+    content: $vps-display; 
+  }
+}
+.vps-bubble {
+  &:before {
+    content: $vps-bubble; 
+  }
+}
+.vps-shop {
+  &:before {
+    content: $vps-shop; 
+  }
+}
+

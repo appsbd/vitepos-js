@@ -1,0 +1,14 @@
+@import "switch_button";
+.modal-full{
+  max-width:90vw !important;
+  @extend .modal-xl;
+}
+.modal {
+  z-index:999999999;
+}
+.form-select,.custom-select{
+  max-width:unset;
+}
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+  opacity: .25;
+}

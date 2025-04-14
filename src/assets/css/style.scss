@@ -1,0 +1,17 @@
+@import "../scss/component/darkmode";
+@import "../scss/component/apbd_loading_button";
+#query-monitor-main{
+  display:none;
+}
+.v-popper__popper {
+  z-index: 1000000000 !important;
+}
+
+#appsbd-app {
+  @import "../scss/main";
+}
+
+
+
+
+

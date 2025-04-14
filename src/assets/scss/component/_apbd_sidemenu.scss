@@ -1,0 +1,200 @@
+.app-side-menu {
+  transition: all 0.5s ease;
+  background: var(--apbd-menu-bg-color, #fff);
+  display: flex !important;
+  flex-direction: column;
+  width: 200px;
+  justify-content: stretch;
+  border-right: 1px solid var(--apbd-border-color, #ccc);
+
+  .apbd-app-logo {
+    //min-height: var(--apbd-header-height, 60px);
+    //max-height: var(--apbd-header-height, 80px);
+    min-height: 150px;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    >svg{
+      position: absolute;
+      width: 70%;
+      margin-left: -35%;
+      left: 50%;
+      top: 10px;
+    }
+    display: flex;
+    align-items: center;
+
+    > a {
+      z-index: 9;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > {
+        img, svg {
+          margin-right: 5px;
+          max-height: 40px;
+        }
+
+
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .app-side-menu-main {
+    height: 100%;
+
+    ul.apbd-main-menu {
+      list-style: none;
+      margin: 15px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      li {
+        margin-bottom: 10px;
+        text-align: center;
+
+        > a {
+
+          transition: all 0.5s ease;
+          position: relative;
+          color: #808191;
+          font-size: 14px;
+
+          &[data-bs-toggle="collapse"] {
+            &::after {
+              transition: all 0.5s ease;
+              content: var(--apbd-menu-chevron, 'v');
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              margin-top: -8px;
+              color: #808191;
+            }
+            &:hover::after{
+              content: var(--apbd-menu-chevron_hover, 'v');
+              color: #fff;
+            }
+            &[aria-expanded="false"]{
+              &::after {
+                transform: rotate(90deg);
+                margin-top: -13px;
+              }
+            }
+
+          }
+
+
+          &.apbd-active, &:hover{
+            background: var(--apbd-theme-color, #1AC98B);
+            color: #fff;
+            &::after{
+              transform: rotate(0deg);
+            }
+          }
+          &[aria-expanded="true"]{
+            background: var(--apbd-submenu-body-bg);
+            color: #808191;
+          }
+
+          border-radius: 12px;
+
+          padding: 10px;
+          text-decoration: none;
+          font-style: normal;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          > {
+            i {
+              margin-right: 10px;
+            }
+
+            svg {
+              height: 14px;
+            }
+
+            i, svg {
+              margin-right: 10px;
+            }
+          }
+
+
+        }
+
+        a + {
+          .collapse , .collapsing {
+            background: var(--apbd-submenu-body-bg);
+            border-radius: 15px;
+            padding: 10px 10px 0 10px;
+            margin-top: 10px;
+
+            ul {
+
+              li {
+                a {
+                  font-size: 0.9em;
+                }
+
+                &:last-child{
+                  margin-bottom: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .app-menu-divider {
+
+    background: var(--apbd-border-color, rgba(26, 201, 139, 0.1));
+    max-width: 125px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .app-menu-footer{
+    padding: 15px;
+  }
+  .xs-menu-toggler{
+    display: none;
+  }
+  @include max-screen(575px){
+    display: block;
+    position: absolute;
+    z-index: 99999999999;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    box-shadow: 10px 0px 36px -18px #000;
+    .xs-menu-toggler{
+        display: flex;
+        position: absolute;
+        right: -36px;
+        top: 0px;
+        background: white;
+        width: 36px;
+        height: 36px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--apbd-border-color, #ccc);
+        border-left-color: transparent;
+        border-top-color: transparent;
+    }
+  }
+
+}
+
+.app-sidebar-right{
+  width: var(--apbd-sidebar-right-width,200px);
+}

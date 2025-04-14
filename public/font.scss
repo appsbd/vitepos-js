@@ -1,0 +1,1464 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?bhzhtz');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?bhzhtz#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?bhzhtz') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?bhzhtz') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?bhzhtz##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.vps {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vps-dashboard-a {
+  &:before {
+    content: $vps-dashboard-a; 
+  }
+}
+.vps-menu-a {
+  &:before {
+    content: $vps-menu-a; 
+  }
+}
+.vps-menu-b {
+  &:before {
+    content: $vps-menu-b; 
+  }
+}
+.vps-password-ch {
+  &:before {
+    content: $vps-password-ch; 
+  }
+}
+.vps-pos-pc-a {
+  &:before {
+    content: $vps-pos-pc-a;
+  }
+}
+.vps-angle-double-down {
+  &:before {
+    content: $vps-angle-double-down; 
+  }
+}
+.vps-angle-double-left {
+  &:before {
+    content: $vps-angle-double-left; 
+  }
+}
+.vps-angle-double-right {
+  &:before {
+    content: $vps-angle-double-right; 
+  }
+}
+.vps-angle-double-up {
+  &:before {
+    content: $vps-angle-double-up; 
+  }
+}
+.vps-angle-down {
+  &:before {
+    content: $vps-angle-down; 
+  }
+}
+.vps-angle-left {
+  &:before {
+    content: $vps-angle-left; 
+  }
+}
+.vps-angle-right {
+  &:before {
+    content: $vps-angle-right; 
+  }
+}
+.vps-angle-up {
+  &:before {
+    content: $vps-angle-up; 
+  }
+}
+.vps-arrow-left1 {
+  &:before {
+    content: $vps-arrow-left1; 
+  }
+}
+.vps-arrow-right1 {
+  &:before {
+    content: $vps-arrow-right1; 
+  }
+}
+.vps-asterisk {
+  &:before {
+    content: $vps-asterisk; 
+  }
+}
+.vps-asterisk-1 {
+  &:before {
+    content: $vps-asterisk-1; 
+  }
+}
+.vps-asterisk-2 {
+  &:before {
+    content: $vps-asterisk-2; 
+  }
+}
+.vps-ban {
+  &:before {
+    content: $vps-ban; 
+  }
+}
+.vps-barcode {
+  &:before {
+    content: $vps-barcode; 
+  }
+}
+.vps-bed {
+  &:before {
+    content: $vps-bed; 
+  }
+}
+.vps-bell-slash {
+  &:before {
+    content: $vps-bell-slash; 
+  }
+}
+.vps-bell-slash-o {
+  &:before {
+    content: $vps-bell-slash-o; 
+  }
+}
+.vps-bill {
+  &:before {
+    content: $vps-bill; 
+  }
+}
+.vps-card {
+  &:before {
+    content: $vps-card; 
+  }
+}
+.vps-caret-down {
+  &:before {
+    content: $vps-caret-down; 
+  }
+}
+.vps-caret-left {
+  &:before {
+    content: $vps-caret-left; 
+  }
+}
+.vps-caret-right {
+  &:before {
+    content: $vps-caret-right; 
+  }
+}
+.vps-caret-up {
+  &:before {
+    content: $vps-caret-up; 
+  }
+}
+.vps-cash-drawer {
+  &:before {
+    content: $vps-cash-drawer; 
+  }
+}
+.vps-cash-drawer-three {
+  &:before {
+    content: $vps-cash-drawer-three; 
+  }
+}
+.vps-cash-drawer-two {
+  &:before {
+    content: $vps-cash-drawer-two; 
+  }
+}
+.vps-category-four {
+  &:before {
+    content: $vps-category-four; 
+  }
+}
+.vps-category-one {
+  &:before {
+    content: $vps-category-one; 
+  }
+}
+.vps-category-three {
+  &:before {
+    content: $vps-category-three; 
+  }
+}
+.vps-category-two {
+  &:before {
+    content: $vps-category-two; 
+  }
+}
+.vps-cc-amex1 {
+  &:before {
+    content: $vps-cc-amex1; 
+  }
+}
+.vps-cc-discover1 {
+  &:before {
+    content: $vps-cc-discover1; 
+  }
+}
+.vps-cc-mastercard1 {
+  &:before {
+    content: $vps-cc-mastercard1; 
+  }
+}
+.vps-cc-visa1 {
+  &:before {
+    content: $vps-cc-visa1; 
+  }
+}
+.vps-certificate {
+  &:before {
+    content: $vps-certificate; 
+  }
+}
+.vps-check-circle-o {
+  &:before {
+    content: $vps-check-circle-o; 
+  }
+}
+.vps-check-circle1 {
+  &:before {
+    content: $vps-check-circle1; 
+  }
+}
+.vps-checklist {
+  &:before {
+    content: $vps-checklist; 
+  }
+}
+.vps-circle-o {
+  &:before {
+    content: $vps-circle-o; 
+  }
+}
+.vps-circle1 {
+  &:before {
+    content: $vps-circle1; 
+  }
+}
+.vps-credit-card1 {
+  &:before {
+    content: $vps-credit-card1; 
+  }
+}
+.vps-delivery-truck {
+  &:before {
+    content: $vps-delivery-truck; 
+  }
+}
+.vps-des-add-user {
+  &:before {
+    content: $vps-des-add-user; 
+  }
+}
+.vps-des-barcode-scanner {
+  &:before {
+    content: $vps-des-barcode-scanner; 
+  }
+}
+.vps-des-clock {
+  &:before {
+    content: $vps-des-clock; 
+  }
+}
+.vps-des-close {
+  &:before {
+    content: $vps-des-close; 
+  }
+}
+.vps-des-customer {
+  &:before {
+    content: $vps-des-customer; 
+  }
+}
+.vps-des-dashboard {
+  &:before {
+    content: $vps-des-dashboard; 
+  }
+}
+.vps-des-lock {
+  &:before {
+    content: $vps-des-lock; 
+  }
+}
+.vps-des-lock-fill {
+  &:before {
+    content: $vps-des-lock-fill; 
+  }
+}
+.vps-des-lock-line {
+  &:before {
+    content: $vps-des-lock-line; 
+  }
+}
+.vps-des-lock-nfill {
+  &:before {
+    content: $vps-des-lock-nfill; 
+  }
+}
+.vps-des-note {
+  &:before {
+    content: $vps-des-note; 
+  }
+}
+.vps-des-notification {
+  &:before {
+    content: $vps-des-notification; 
+  }
+}
+.vps-des-notification-alert {
+  &:before {
+    content: $vps-des-notification-alert; 
+  }
+}
+.vps-des-order {
+  &:before {
+    content: $vps-des-order; 
+  }
+}
+.vps-des-pause {
+  &:before {
+    content: $vps-des-pause; 
+  }
+}
+.vps-des-plus {
+  &:before {
+    content: $vps-des-plus; 
+  }
+}
+.vps-des-products {
+  &:before {
+    content: $vps-des-products; 
+  }
+}
+.vps-des-repeat {
+  &:before {
+    content: $vps-des-repeat; 
+  }
+}
+.vps-des-send {
+  &:before {
+    content: $vps-des-send; 
+  }
+}
+.vps-des-shipment {
+  &:before {
+    content: $vps-des-shipment; 
+  }
+}
+.vps-des-stock {
+  &:before {
+    content: $vps-des-stock; 
+  }
+}
+.vps-des-supplier {
+  &:before {
+    content: $vps-des-supplier; 
+  }
+}
+.vps-des-unlock {
+  &:before {
+    content: $vps-des-unlock; 
+  }
+}
+.vps-des-unlock-line {
+  &:before {
+    content: $vps-des-unlock-line; 
+  }
+}
+.vps-des-wifi {
+  &:before {
+    content: $vps-des-wifi; 
+  }
+}
+.vps-details-one {
+  &:before {
+    content: $vps-details-one; 
+  }
+}
+.vps-details-two {
+  &:before {
+    content: $vps-details-two; 
+  }
+}
+.vps-download1 {
+  &:before {
+    content: $vps-download1; 
+  }
+}
+.vps-edit1 {
+  &:before {
+    content: $vps-edit1; 
+  }
+}
+.vps-empty-cart {
+  &:before {
+    content: $vps-empty-cart; 
+  }
+}
+.vps-fast {
+  &:before {
+    content: $vps-fast; 
+  }
+}
+.vps-file-archive-o1 {
+  &:before {
+    content: $vps-file-archive-o1; 
+  }
+}
+.vps-file-excel-o1 {
+  &:before {
+    content: $vps-file-excel-o1; 
+  }
+}
+.vps-file-image-o {
+  &:before {
+    content: $vps-file-image-o; 
+  }
+}
+.vps-file-pdf-o1 {
+  &:before {
+    content: $vps-file-pdf-o1; 
+  }
+}
+.vps-hold {
+  &:before {
+    content: $vps-hold; 
+  }
+}
+.vps-hold-one {
+  &:before {
+    content: $vps-hold-one; 
+  }
+}
+.vps-hold-three {
+  &:before {
+    content: $vps-hold-three; 
+  }
+}
+.vps-hold-two {
+  &:before {
+    content: $vps-hold-two; 
+  }
+}
+.vps-inventory {
+  &:before {
+    content: $vps-inventory; 
+  }
+}
+.vps-inventory-list {
+  &:before {
+    content: $vps-inventory-list; 
+  }
+}
+.vps-log-out {
+  &:before {
+    content: $vps-log-out; 
+  }
+}
+.vps-maximize1 {
+  &:before {
+    content: $vps-maximize1; 
+  }
+}
+.vps-menu-list {
+  &:before {
+    content: $vps-menu-list; 
+  }
+}
+.vps-minimize {
+  &:before {
+    content: $vps-minimize; 
+  }
+}
+.vps-minimize-21 {
+  &:before {
+    content: $vps-minimize-21; 
+  }
+}
+.vps-minus-circle1 {
+  &:before {
+    content: $vps-minus-circle1; 
+  }
+}
+.vps-mobile-payment {
+  &:before {
+    content: $vps-mobile-payment; 
+  }
+}
+.vps-money {
+  &:before {
+    content: $vps-money; 
+  }
+}
+.vps-money-receipt {
+  &:before {
+    content: $vps-money-receipt; 
+  }
+}
+.vps-no-wifi {
+  &:before {
+    content: $vps-no-wifi; 
+  }
+}
+.vps-pause {
+  &:before {
+    content: $vps-pause; 
+  }
+}
+.vps-payment-method {
+  &:before {
+    content: $vps-payment-method; 
+  }
+}
+.vps-plus-circle1 {
+  &:before {
+    content: $vps-plus-circle1; 
+  }
+}
+.vps-pos {
+  &:before {
+    content: $vps-pos; 
+  }
+}
+.vps-pos-receipt {
+  &:before {
+    content: $vps-pos-receipt; 
+  }
+}
+.vps-power-off {
+  &:before {
+    content: $vps-power-off; 
+  }
+}
+.vps-printer-icon {
+  &:before {
+    content: $vps-printer-icon; 
+  }
+}
+.vps-printer-three {
+  &:before {
+    content: $vps-printer-three; 
+  }
+}
+.vps-printer-two {
+  &:before {
+    content: $vps-printer-two; 
+  }
+}
+.vps-printer1 {
+  &:before {
+    content: $vps-printer1; 
+  }
+}
+.vps-receipt {
+  &:before {
+    content: $vps-receipt; 
+  }
+}
+.vps-refresh {
+  &:before {
+    content: $vps-refresh; 
+  }
+}
+.vps-remove-from-cart {
+  &:before {
+    content: $vps-remove-from-cart; 
+  }
+}
+.vps-rotate-right {
+  &:before {
+    content: $vps-rotate-right; 
+  }
+}
+.vps-search-minus {
+  &:before {
+    content: $vps-search-minus; 
+  }
+}
+.vps-search-plus {
+  &:before {
+    content: $vps-search-plus; 
+  }
+}
+.vps-search1 {
+  &:before {
+    content: $vps-search1; 
+  }
+}
+.vps-shop1 {
+  &:before {
+    content: $vps-shop1; 
+  }
+}
+.vps-shopping-cart1 {
+  &:before {
+    content: $vps-shopping-cart1; 
+  }
+}
+.vps-side-menu {
+  &:before {
+    content: $vps-side-menu; 
+  }
+}
+.vps-side-menu-four {
+  &:before {
+    content: $vps-side-menu-four; 
+  }
+}
+.vps-side-menu-three {
+  &:before {
+    content: $vps-side-menu-three; 
+  }
+}
+.vps-side-menu-two {
+  &:before {
+    content: $vps-side-menu-two; 
+  }
+}
+.vps-sign-out {
+  &:before {
+    content: $vps-sign-out; 
+  }
+}
+.vps-signal {
+  &:before {
+    content: $vps-signal; 
+  }
+}
+.vps-sort-down {
+  &:before {
+    content: $vps-sort-down; 
+  }
+}
+.vps-sort-unsorted {
+  &:before {
+    content: $vps-sort-unsorted; 
+  }
+}
+.vps-sort-up {
+  &:before {
+    content: $vps-sort-up; 
+  }
+}
+.vps-star-half1 {
+  &:before {
+    content: $vps-star-half1; 
+  }
+}
+.vps-star-o1 {
+  &:before {
+    content: $vps-star-o1; 
+  }
+}
+.vps-star2 {
+  &:before {
+    content: $vps-star2; 
+  }
+}
+.vps-supplier {
+  &:before {
+    content: $vps-supplier; 
+  }
+}
+.vps-swipe-machine {
+  &:before {
+    content: $vps-swipe-machine; 
+  }
+}
+.vps-swipe-machine-2 {
+  &:before {
+    content: $vps-swipe-machine-2; 
+  }
+}
+.vps-sync {
+  &:before {
+    content: $vps-sync; 
+  }
+}
+.vps-table {
+  &:before {
+    content: $vps-table; 
+  }
+}
+.vps-table-list {
+  &:before {
+    content: $vps-table-list; 
+  }
+}
+.vps-times-circle {
+  &:before {
+    content: $vps-times-circle; 
+  }
+}
+.vps-times-circle-o {
+  &:before {
+    content: $vps-times-circle-o; 
+  }
+}
+.vps-trash-21 {
+  &:before {
+    content: $vps-trash-21; 
+  }
+}
+.vps-trash-o {
+  &:before {
+    content: $vps-trash-o; 
+  }
+}
+.vps-trash1 {
+  &:before {
+    content: $vps-trash1; 
+  }
+}
+.vps-trash11 {
+  &:before {
+    content: $vps-trash11; 
+  }
+}
+.vps-upload-one {
+  &:before {
+    content: $vps-upload-one; 
+  }
+}
+.vps-upload-three {
+  &:before {
+    content: $vps-upload-three; 
+  }
+}
+.vps-upload-two {
+  &:before {
+    content: $vps-upload-two; 
+  }
+}
+.vps-user {
+  &:before {
+    content: $vps-user; 
+  }
+}
+.vps-user-add {
+  &:before {
+    content: $vps-user-add; 
+  }
+}
+.vps-user-circle-o {
+  &:before {
+    content: $vps-user-circle-o; 
+  }
+}
+.vps-user-o {
+  &:before {
+    content: $vps-user-o; 
+  }
+}
+.vps-user-plus1 {
+  &:before {
+    content: $vps-user-plus1; 
+  }
+}
+.vps-user-remove {
+  &:before {
+    content: $vps-user-remove; 
+  }
+}
+.vps-user-search {
+  &:before {
+    content: $vps-user-search; 
+  }
+}
+.vps-user-x {
+  &:before {
+    content: $vps-user-x; 
+  }
+}
+.vps-user1 {
+  &:before {
+    content: $vps-user1; 
+  }
+}
+.vps-user2 {
+  &:before {
+    content: $vps-user2; 
+  }
+}
+.vps-users1 {
+  &:before {
+    content: $vps-users1; 
+  }
+}
+.vps-vite-pos {
+  &:before {
+    content: $vps-vite-pos; 
+  }
+}
+.vps-vite-pos-full {
+  &:before {
+    content: $vps-vite-pos-full; 
+  }
+}
+.vps-vitepos {
+  &:before {
+    content: $vps-vitepos; 
+  }
+}
+.vps-vt-pos {
+  &:before {
+    content: $vps-vt-pos; 
+  }
+}
+.vps-x-circle1 {
+  &:before {
+    content: $vps-x-circle1; 
+  }
+}
+.vps-x-octagon {
+  &:before {
+    content: $vps-x-octagon; 
+  }
+}
+.vps-x-square1 {
+  &:before {
+    content: $vps-x-square1; 
+  }
+}
+.vps-airplay {
+  &:before {
+    content: $vps-airplay; 
+  }
+}
+.vps-alert-circle {
+  &:before {
+    content: $vps-alert-circle; 
+  }
+}
+.vps-alert-triangle {
+  &:before {
+    content: $vps-alert-triangle; 
+  }
+}
+.vps-arrow-down {
+  &:before {
+    content: $vps-arrow-down; 
+  }
+}
+.vps-arrow-down-circle {
+  &:before {
+    content: $vps-arrow-down-circle; 
+  }
+}
+.vps-arrow-down-left {
+  &:before {
+    content: $vps-arrow-down-left; 
+  }
+}
+.vps-arrow-down-right {
+  &:before {
+    content: $vps-arrow-down-right; 
+  }
+}
+.vps-arrow-left {
+  &:before {
+    content: $vps-arrow-left; 
+  }
+}
+.vps-arrow-left-circle {
+  &:before {
+    content: $vps-arrow-left-circle; 
+  }
+}
+.vps-arrow-right {
+  &:before {
+    content: $vps-arrow-right; 
+  }
+}
+.vps-arrow-right-circle {
+  &:before {
+    content: $vps-arrow-right-circle; 
+  }
+}
+.vps-arrow-up {
+  &:before {
+    content: $vps-arrow-up; 
+  }
+}
+.vps-arrow-up-circle {
+  &:before {
+    content: $vps-arrow-up-circle; 
+  }
+}
+.vps-arrow-up-left {
+  &:before {
+    content: $vps-arrow-up-left; 
+  }
+}
+.vps-arrow-up-right {
+  &:before {
+    content: $vps-arrow-up-right; 
+  }
+}
+.vps-bell {
+  &:before {
+    content: $vps-bell; 
+  }
+}
+.vps-bell-off {
+  &:before {
+    content: $vps-bell-off; 
+  }
+}
+.vps-check {
+  &:before {
+    content: $vps-check; 
+  }
+}
+.vps-check-circle {
+  &:before {
+    content: $vps-check-circle; 
+  }
+}
+.vps-check-square {
+  &:before {
+    content: $vps-check-square; 
+  }
+}
+.vps-circle {
+  &:before {
+    content: $vps-circle; 
+  }
+}
+.vps-circle-check {
+  &:before {
+    content: $vps-circle-check; 
+  }
+}
+.vps-clipboard {
+  &:before {
+    content: $vps-clipboard; 
+  }
+}
+.vps-clock {
+  &:before {
+    content: $vps-clock; 
+  }
+}
+.vps-code {
+  &:before {
+    content: $vps-code; 
+  }
+}
+.vps-copy {
+  &:before {
+    content: $vps-copy; 
+  }
+}
+.vps-corner-down-left {
+  &:before {
+    content: $vps-corner-down-left; 
+  }
+}
+.vps-credit-card {
+  &:before {
+    content: $vps-credit-card; 
+  }
+}
+.vps-crosshair {
+  &:before {
+    content: $vps-crosshair; 
+  }
+}
+.vps-database {
+  &:before {
+    content: $vps-database; 
+  }
+}
+.vps-disc {
+  &:before {
+    content: $vps-disc; 
+  }
+}
+.vps-download {
+  &:before {
+    content: $vps-download; 
+  }
+}
+.vps-edit {
+  &:before {
+    content: $vps-edit; 
+  }
+}
+.vps-edit-2 {
+  &:before {
+    content: $vps-edit-2; 
+  }
+}
+.vps-external-link {
+  &:before {
+    content: $vps-external-link; 
+  }
+}
+.vps-eye {
+  &:before {
+    content: $vps-eye; 
+  }
+}
+.vps-eye-off {
+  &:before {
+    content: $vps-eye-off; 
+  }
+}
+.vps-filter {
+  &:before {
+    content: $vps-filter; 
+  }
+}
+.vps-grid {
+  &:before {
+    content: $vps-grid; 
+  }
+}
+.vps-help-circle {
+  &:before {
+    content: $vps-help-circle; 
+  }
+}
+.vps-home {
+  &:before {
+    content: $vps-home; 
+  }
+}
+.vps-image {
+  &:before {
+    content: $vps-image; 
+  }
+}
+.vps-instagram {
+  &:before {
+    content: $vps-instagram; 
+  }
+}
+.vps-loader {
+  &:before {
+    content: $vps-loader; 
+  }
+}
+.vps-lock {
+  &:before {
+    content: $vps-lock; 
+  }
+}
+.vps-map-pin {
+  &:before {
+    content: $vps-map-pin; 
+  }
+}
+.vps-maximize {
+  &:before {
+    content: $vps-maximize; 
+  }
+}
+.vps-maximize-2 {
+  &:before {
+    content: $vps-maximize-2; 
+  }
+}
+.vps-message-circle {
+  &:before {
+    content: $vps-message-circle; 
+  }
+}
+.vps-message-square {
+  &:before {
+    content: $vps-message-square; 
+  }
+}
+.vps-minimize-2 {
+  &:before {
+    content: $vps-minimize-2; 
+  }
+}
+.vps-minus {
+  &:before {
+    content: $vps-minus; 
+  }
+}
+.vps-minus-circle {
+  &:before {
+    content: $vps-minus-circle; 
+  }
+}
+.vps-minus-square {
+  &:before {
+    content: $vps-minus-square; 
+  }
+}
+.vps-monitor {
+  &:before {
+    content: $vps-monitor; 
+  }
+}
+.vps-more-horizontal {
+  &:before {
+    content: $vps-more-horizontal; 
+  }
+}
+.vps-more-vertical {
+  &:before {
+    content: $vps-more-vertical; 
+  }
+}
+.vps-paperclip {
+  &:before {
+    content: $vps-paperclip; 
+  }
+}
+.vps-pause-circle {
+  &:before {
+    content: $vps-pause-circle; 
+  }
+}
+.vps-pdf-file {
+  &:before {
+    content: $vps-pdf-file; 
+  }
+}
+.vps-pie-chart {
+  &:before {
+    content: $vps-pie-chart; 
+  }
+}
+.vps-plus {
+  &:before {
+    content: $vps-plus; 
+  }
+}
+.vps-plus-circle {
+  &:before {
+    content: $vps-plus-circle; 
+  }
+}
+.vps-plus-square {
+  &:before {
+    content: $vps-plus-square; 
+  }
+}
+.vps-power {
+  &:before {
+    content: $vps-power; 
+  }
+}
+.vps-printer {
+  &:before {
+    content: $vps-printer; 
+  }
+}
+.vps-refresh-cw {
+  &:before {
+    content: $vps-refresh-cw; 
+  }
+}
+.vps-repeat {
+  &:before {
+    content: $vps-repeat; 
+  }
+}
+.vps-rotate-ccw {
+  &:before {
+    content: $vps-rotate-ccw; 
+  }
+}
+.vps-rotate-cw {
+  &:before {
+    content: $vps-rotate-cw; 
+  }
+}
+.vps-save {
+  &:before {
+    content: $vps-save; 
+  }
+}
+.vps-scissors {
+  &:before {
+    content: $vps-scissors; 
+  }
+}
+.vps-search {
+  &:before {
+    content: $vps-search; 
+  }
+}
+.vps-send {
+  &:before {
+    content: $vps-send; 
+  }
+}
+.vps-settings {
+  &:before {
+    content: $vps-settings; 
+  }
+}
+.vps-shield {
+  &:before {
+    content: $vps-shield; 
+  }
+}
+.vps-shopping-cart {
+  &:before {
+    content: $vps-shopping-cart; 
+  }
+}
+.vps-sliders {
+  &:before {
+    content: $vps-sliders; 
+  }
+}
+.vps-square {
+  &:before {
+    content: $vps-square; 
+  }
+}
+.vps-square-check {
+  &:before {
+    content: $vps-square-check; 
+  }
+}
+.vps-star {
+  &:before {
+    content: $vps-star; 
+  }
+}
+.vps-sun {
+  &:before {
+    content: $vps-sun; 
+  }
+}
+.vps-target {
+  &:before {
+    content: $vps-target; 
+  }
+}
+.vps-trash {
+  &:before {
+    content: $vps-trash; 
+  }
+}
+.vps-trash-2 {
+  &:before {
+    content: $vps-trash-2; 
+  }
+}
+.vps-trello {
+  &:before {
+    content: $vps-trello; 
+  }
+}
+.vps-unlock {
+  &:before {
+    content: $vps-unlock; 
+  }
+}
+.vps-upload {
+  &:before {
+    content: $vps-upload; 
+  }
+}
+.vps-user-plus {
+  &:before {
+    content: $vps-user-plus; 
+  }
+}
+.vps-users {
+  &:before {
+    content: $vps-users; 
+  }
+}
+.vps-wifi {
+  &:before {
+    content: $vps-wifi; 
+  }
+}
+.vps-wifi-off {
+  &:before {
+    content: $vps-wifi-off; 
+  }
+}
+.vps-x {
+  &:before {
+    content: $vps-x; 
+  }
+}
+.vps-x-circle {
+  &:before {
+    content: $vps-x-circle; 
+  }
+}
+.vps-x-square {
+  &:before {
+    content: $vps-x-square; 
+  }
+}
+.vps-zoom-in {
+  &:before {
+    content: $vps-zoom-in; 
+  }
+}
+.vps-zoom-out {
+  &:before {
+    content: $vps-zoom-out; 
+  }
+}
+.vps-display {
+  &:before {
+    content: $vps-display; 
+  }
+}
+.vps-bubble {
+  &:before {
+    content: $vps-bubble; 
+  }
+}
+.vps-shop {
+  &:before {
+    content: $vps-shop; 
+  }
+}
+.vps-file-pdf-solid {
+  &:before {
+    content: $vps-file-pdf-solid; 
+  }
+}
+.vps-star1 {
+  &:before {
+    content: $vps-star1; 
+  }
+}
+.vps-star-o {
+  &:before {
+    content: $vps-star-o; 
+  }
+}
+.vps-star-half {
+  &:before {
+    content: $vps-star-half; 
+  }
+}
+.vps-copy1 {
+  &:before {
+    content: $vps-copy1; 
+  }
+}
+.vps-files-o {
+  &:before {
+    content: $vps-files-o; 
+  }
+}
+.vps-paperclip1 {
+  &:before {
+    content: $vps-paperclip1; 
+  }
+}
+.vps-star-half-empty {
+  &:before {
+    content: $vps-star-half-empty; 
+  }
+}
+.vps-star-half-full {
+  &:before {
+    content: $vps-star-half-full; 
+  }
+}
+.vps-star-half-o {
+  &:before {
+    content: $vps-star-half-o; 
+  }
+}
+.vps-file-pdf-o {
+  &:before {
+    content: $vps-file-pdf-o; 
+  }
+}
+.vps-file-excel-o {
+  &:before {
+    content: $vps-file-excel-o; 
+  }
+}
+.vps-file-archive-o {
+  &:before {
+    content: $vps-file-archive-o; 
+  }
+}
+.vps-file-zip-o {
+  &:before {
+    content: $vps-file-zip-o; 
+  }
+}
+.vps-plug {
+  &:before {
+    content: $vps-plug; 
+  }
+}
+.vps-paypal {
+  &:before {
+    content: $vps-paypal; 
+  }
+}
+.vps-google-wallet {
+  &:before {
+    content: $vps-google-wallet; 
+  }
+}
+.vps-cc-visa {
+  &:before {
+    content: $vps-cc-visa; 
+  }
+}
+.vps-cc-mastercard {
+  &:before {
+    content: $vps-cc-mastercard; 
+  }
+}
+.vps-cc-discover {
+  &:before {
+    content: $vps-cc-discover; 
+  }
+}
+.vps-cc-amex {
+  &:before {
+    content: $vps-cc-amex; 
+  }
+}
+.vps-cc-paypal {
+  &:before {
+    content: $vps-cc-paypal; 
+  }
+}
+.vps-cc-stripe {
+  &:before {
+    content: $vps-cc-stripe; 
+  }
+}
+.vps-credit-card-alt {
+  &:before {
+    content: $vps-credit-card-alt; 
+  }
+}
+

@@ -1,0 +1,105 @@
+.darkmode--activated {
+  #appsbd-app {
+    --apbd-border-color: rgba(0, 0, 0, 0.22);
+    --apbd-btn-color:#fff;
+    --apbd-btn-bg-color:transparent;
+    --apbd-btn-bg-hover:#000;
+    --apbd-input-text-bg:#000;
+    // .apbd-main-menu{
+    --apbd-theme-color:#000;
+    // }
+    --eg-cell-header-color: #e9e6e6;
+    --eg-table-border-color: #dfdcdc;
+    --eg-pg-btn-bg:#000;
+    --eg-pagination-shadow:#3c3c3c;
+  }
+}
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
+.darkmode--activated {
+  #appsbd-app {
+    .eg-cell-data {
+      .text-theme{
+        color: #000000;
+      }
+      .text-danger{
+        mix-blend-mode: difference;
+      }
+    }
+    .btn{
+      &.btn-danger {
+        mix-blend-mode: difference;
+      }
+      &.btn-primary{
+        border-color: #000;
+        background: #000;
+      }
+
+    }
+    .app-side-menu .app-side-menu-main ul.apbd-main-menu li > a {
+      &.apbd-active {
+        border-color: #000;
+        background: #000;
+      }
+    }
+
+    .form-switch .form-check-input:not(:checked){
+
+        background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-4 -4 8 8%27%3e%3ccircle r=%273%27 fill=%27rgba%280, 0, 0, 0.25%29%27/%3e%3c/svg%3e");
+    }
+    .input-group .input-group-text {
+      color:#fff;
+    }
+    .accordion-button {
+      color: #000;
+      background-color: rgba(0, 0, 0, 0.07);
+      &:not(.collapsed){
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      &::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e");
+        background-color: transparent;
+      }
+    }
+    .apbd-ignore-dm {
+      mix-blend-mode: difference;
+    }
+    .apbd-cp{
+      &:hover {
+        >a{
+          color: #0b0909;
+        }
+      }
+    }
+
+    .apbd-tab-btn,.btn-theme-outline{
+      border-color: rgba(0, 0, 0, 0.34);
+      color: rgba(0, 0, 0, 0.78);;
+      &.apbd-active,&:hover{
+        border-color: #000;
+        background: #000;
+      }
+      >i{
+        border-color: rgba(0, 0, 0, 0.34);
+      }
+    }
+    .form-switch.dark-switch .form-check-input:checked{
+      mix-blend-mode: difference;
+      background-color: #000;
+      border-color: #ffffff;
+    }
+
+    .btn {
+      &.btn-theme {
+        border-color: #000;
+        background: transparent;
+        color: #000;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
