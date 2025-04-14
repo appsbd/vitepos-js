@@ -1,4 +1,4 @@
-# adminpanel
+# Vitepos Javascript
 
 ## Project setup
 ```
