@@ -1,0 +1,886 @@
+@-webkit-keyframes #{$ani-font-prefix}wrench {
+    0% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+    8% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+    10% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    18% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    20% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    28% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    30% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    38% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    40% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    48% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    50% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    58% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    60% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    68% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    100%, 75% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@keyframes #{$ani-font-prefix}wrench {
+    0% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+    8% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+    10% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    18% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    20% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    28% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    30% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    38% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    40% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    48% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    50% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    58% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    60% {
+        -webkit-transform: rotate(-24deg);
+        transform: rotate(-24deg)
+    }
+    68% {
+        -webkit-transform: rotate(24deg);
+        transform: rotate(24deg)
+    }
+    100%, 75% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}wrench, .#{$ani-font-prefix}wrench.animated, .#{$ani-font-prefix}wrench.animated-hover:hover {
+    -webkit-animation: #{$ani-font-prefix}wrench 2.5s ease infinite;
+    animation: #{$ani-font-prefix}wrench 2.5s ease infinite;
+    transform-origin-x: 90%;
+    transform-origin-y: 35%;
+    transform-origin-z: initial
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}wrench.#{$ani-font-prefix}fast, .#{$ani-font-prefix}wrench.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}wrench.animated.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}wrench 1.2s ease infinite;
+    animation: #{$ani-font-prefix}wrench 1.2s ease infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}wrench.#{$ani-font-prefix}slow, .#{$ani-font-prefix}wrench.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}wrench.animated.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}wrench 3.7s ease infinite;
+    animation: #{$ani-font-prefix}wrench 3.7s ease infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+    2% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+    4% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+    6% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+    8% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg)
+    }
+    10% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg)
+    }
+    12% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+    14% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+    16% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+    18% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+    100%, 20% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@keyframes #{$ani-font-prefix}ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+    2% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+    4% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+    6% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+    8% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg)
+    }
+    10% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg)
+    }
+    12% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg)
+    }
+    14% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+    16% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg)
+    }
+    18% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg)
+    }
+    100%, 20% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}ring, .#{$ani-font-prefix}ring.animated, .#{$ani-font-prefix}ring.animated-hover:hover {
+    -webkit-animation: #{$ani-font-prefix}ring 2s ease infinite;
+    animation: #{$ani-font-prefix}ring 2s ease infinite;
+    transform-origin-x: 50%;
+    transform-origin-y: 0;
+    transform-origin-z: initial
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}ring.#{$ani-font-prefix}fast, .#{$ani-font-prefix}ring.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}ring.animated.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}ring 1s ease infinite;
+    animation: #{$ani-font-prefix}ring 1s ease infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}ring.#{$ani-font-prefix}slow, .#{$ani-font-prefix}ring.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}ring.animated.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}ring 3s ease infinite;
+    animation: #{$ani-font-prefix}ring 3s ease infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}vertical {
+    0% {
+        -webkit-transform: translate(0, -3px);
+        transform: translate(0, -3px)
+    }
+    4% {
+        -webkit-transform: translate(0, 3px);
+        transform: translate(0, 3px)
+    }
+    8% {
+        -webkit-transform: translate(0, -3px);
+        transform: translate(0, -3px)
+    }
+    12% {
+        -webkit-transform: translate(0, 3px);
+        transform: translate(0, 3px)
+    }
+    16% {
+        -webkit-transform: translate(0, -3px);
+        transform: translate(0, -3px)
+    }
+    20% {
+        -webkit-transform: translate(0, 3px);
+        transform: translate(0, 3px)
+    }
+    100%, 22% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+
+@keyframes #{$ani-font-prefix}vertical {
+    0% {
+        -webkit-transform: translate(0, -3px);
+        transform: translate(0, -3px)
+    }
+    4% {
+        -webkit-transform: translate(0, 3px);
+        transform: translate(0, 3px)
+    }
+    8% {
+        -webkit-transform: translate(0, -3px);
+        transform: translate(0, -3px)
+    }
+    12% {
+        -webkit-transform: translate(0, 3px);
+        transform: translate(0, 3px)
+    }
+    16% {
+        -webkit-transform: translate(0, -3px);
+        transform: translate(0, -3px)
+    }
+    20% {
+        -webkit-transform: translate(0, 3px);
+        transform: translate(0, 3px)
+    }
+    100%, 22% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}vertical, .#{$ani-font-prefix}vertical.animated, .#{$ani-font-prefix}vertical.animated-hover:hover {
+    -webkit-animation: #{$ani-font-prefix}vertical 2s ease infinite;
+    animation: #{$ani-font-prefix}vertical 2s ease infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}vertical.#{$ani-font-prefix}fast, .#{$ani-font-prefix}vertical.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}vertical.animated.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}vertical 1s ease infinite;
+    animation: #{$ani-font-prefix}vertical 1s ease infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}vertical.#{$ani-font-prefix}slow, .#{$ani-font-prefix}vertical.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}vertical.animated.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}vertical 4s ease infinite;
+    animation: #{$ani-font-prefix}vertical 4s ease infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}horizontal {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    6% {
+        -webkit-transform: translate(5px, 0);
+        transform: translate(5px, 0)
+    }
+    12% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    18% {
+        -webkit-transform: translate(5px, 0);
+        transform: translate(5px, 0)
+    }
+    24% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    30% {
+        -webkit-transform: translate(5px, 0);
+        transform: translate(5px, 0)
+    }
+    100%, 36% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+
+@keyframes #{$ani-font-prefix}horizontal {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    6% {
+        -webkit-transform: translate(5px, 0);
+        transform: translate(5px, 0)
+    }
+    12% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    18% {
+        -webkit-transform: translate(5px, 0);
+        transform: translate(5px, 0)
+    }
+    24% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    30% {
+        -webkit-transform: translate(5px, 0);
+        transform: translate(5px, 0)
+    }
+    100%, 36% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+
+.#{$ani-font-prefix}horizontal.animated, .#{$ani-font-prefix}horizontal.animated-hover:hover, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}horizontal {
+    -webkit-animation: #{$ani-font-prefix}horizontal 2s ease infinite;
+    animation: #{$ani-font-prefix}horizontal 2s ease infinite
+}
+
+.#{$ani-font-prefix}horizontal.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}horizontal.animated.#{$ani-font-prefix}fast, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}horizontal.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}horizontal 1s ease infinite;
+    animation: #{$ani-font-prefix}horizontal 1s ease infinite
+}
+
+.#{$ani-font-prefix}horizontal.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}horizontal.animated.#{$ani-font-prefix}slow, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}horizontal.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}horizontal 3s ease infinite;
+    animation: #{$ani-font-prefix}horizontal 3s ease infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}flash {
+    0%, 100%, 50% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+@keyframes #{$ani-font-prefix}flash {
+    0%, 100%, 50% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+.#{$ani-font-prefix}flash.animated, .#{$ani-font-prefix}flash.animated-hover:hover, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}flash {
+    -webkit-animation: #{$ani-font-prefix}flash 2s ease infinite;
+    animation: #{$ani-font-prefix}flash 2s ease infinite
+}
+
+.#{$ani-font-prefix}flash.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}flash.animated.#{$ani-font-prefix}fast, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}flash.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}flash 1s ease infinite;
+    animation: #{$ani-font-prefix}flash 1s ease infinite
+}
+
+.#{$ani-font-prefix}flash.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}flash.animated.#{$ani-font-prefix}slow, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}flash.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}flash 3s ease infinite;
+    animation: #{$ani-font-prefix}flash 3s ease infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}bounce {
+    0%, 10%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+}
+
+@keyframes #{$ani-font-prefix}bounce {
+    0%, 10%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+}
+
+.#{$ani-font-prefix}bounce.animated, .#{$ani-font-prefix}bounce.animated-hover:hover, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}bounce {
+    -webkit-animation: #{$ani-font-prefix}bounce 2s ease infinite;
+    animation: #{$ani-font-prefix}bounce 2s ease infinite
+}
+
+.#{$ani-font-prefix}bounce.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}bounce.animated.#{$ani-font-prefix}fast, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}bounce.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}bounce 1s ease infinite;
+    animation: #{$ani-font-prefix}bounce 1s ease infinite
+}
+
+.#{$ani-font-prefix}bounce.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}bounce.animated.#{$ani-font-prefix}slow, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}bounce.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}bounce 3s ease infinite;
+    animation: #{$ani-font-prefix}bounce 3s ease infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes #{$ani-font-prefix}spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}spin, .#{$ani-font-prefix}spin.animated, .#{$ani-font-prefix}spin.animated-hover:hover {
+    -webkit-animation: #{$ani-font-prefix}spin 1.5s linear infinite;
+    animation: #{$ani-font-prefix}spin 1.5s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}spin.#{$ani-font-prefix}fast, .#{$ani-font-prefix}spin.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}spin.animated.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}spin .7s linear infinite;
+    animation: #{$ani-font-prefix}spin .7s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}spin.#{$ani-font-prefix}slow, .#{$ani-font-prefix}spin.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}spin.animated.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}spin 2.2s linear infinite;
+    animation: #{$ani-font-prefix}spin 2.2s linear infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}float {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    50% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px)
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes #{$ani-font-prefix}float {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    50% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px)
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+.#{$ani-font-prefix}float.animated, .#{$ani-font-prefix}float.animated-hover:hover, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}float {
+    -webkit-animation: #{$ani-font-prefix}float 2s linear infinite;
+    animation: #{$ani-font-prefix}float 2s linear infinite
+}
+
+.#{$ani-font-prefix}float.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}float.animated.#{$ani-font-prefix}fast, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}float.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}float 1s linear infinite;
+    animation: #{$ani-font-prefix}float 1s linear infinite
+}
+
+.#{$ani-font-prefix}float.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}float.animated.#{$ani-font-prefix}slow, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}float.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}float 3s linear infinite;
+    animation: #{$ani-font-prefix}float 3s linear infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}pulse {
+    0% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+    50% {
+        -webkit-transform: scale(.8);
+        transform: scale(.8)
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+}
+
+@keyframes #{$ani-font-prefix}pulse {
+    0% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+    50% {
+        -webkit-transform: scale(.8);
+        transform: scale(.8)
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}pulse, .#{$ani-font-prefix}pulse.animated, .#{$ani-font-prefix}pulse.animated-hover:hover {
+    -webkit-animation: #{$ani-font-prefix}pulse 2s linear infinite;
+    animation: #{$ani-font-prefix}pulse 2s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}pulse.#{$ani-font-prefix}fast, .#{$ani-font-prefix}pulse.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}pulse.animated.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}pulse 1s linear infinite;
+    animation: #{$ani-font-prefix}pulse 1s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}pulse.#{$ani-font-prefix}slow, .#{$ani-font-prefix}pulse.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}pulse.animated.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}pulse 3s linear infinite;
+    animation: #{$ani-font-prefix}pulse 3s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}shake, .#{$ani-font-prefix}shake.animated, .#{$ani-font-prefix}shake.animated-hover:hover {
+    -webkit-animation: #{$ani-font-prefix}wrench 2.5s ease infinite;
+    animation: #{$ani-font-prefix}wrench 2.5s ease infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}shake.#{$ani-font-prefix}fast, .#{$ani-font-prefix}shake.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}shake.animated.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}wrench 1.2s ease infinite;
+    animation: #{$ani-font-prefix}wrench 1.2s ease infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}shake.#{$ani-font-prefix}slow, .#{$ani-font-prefix}shake.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}shake.animated.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}wrench 3.7s ease infinite;
+    animation: #{$ani-font-prefix}wrench 3.7s ease infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}tada {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    10%, 20% {
+        -webkit-transform: scale(.9) rotate(-8deg);
+        transform: scale(.9) rotate(-8deg)
+    }
+    30%, 50%, 70% {
+        -webkit-transform: scale(1.3) rotate(8deg);
+        transform: scale(1.3) rotate(8deg)
+    }
+    40%, 60% {
+        -webkit-transform: scale(1.3) rotate(-8deg);
+        transform: scale(1.3) rotate(-8deg)
+    }
+    100%, 80% {
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0)
+    }
+}
+
+@keyframes #{$ani-font-prefix}tada {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    10%, 20% {
+        -webkit-transform: scale(.9) rotate(-8deg);
+        transform: scale(.9) rotate(-8deg)
+    }
+    30%, 50%, 70% {
+        -webkit-transform: scale(1.3) rotate(8deg);
+        transform: scale(1.3) rotate(8deg)
+    }
+    40%, 60% {
+        -webkit-transform: scale(1.3) rotate(-8deg);
+        transform: scale(1.3) rotate(-8deg)
+    }
+    100%, 80% {
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0)
+    }
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}tada, .#{$ani-font-prefix}tada.animated, .#{$ani-font-prefix}tada.animated-hover:hover {
+    -webkit-animation: #{$ani-font-prefix}tada 2s linear infinite;
+    animation: #{$ani-font-prefix}tada 2s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}tada.#{$ani-font-prefix}fast, .#{$ani-font-prefix}tada.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}tada.animated.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}tada 1s linear infinite;
+    animation: #{$ani-font-prefix}tada 1s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}tada.#{$ani-font-prefix}slow, .#{$ani-font-prefix}tada.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}tada.animated.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}tada 3s linear infinite;
+    animation: #{$ani-font-prefix}tada 3s linear infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}passing {
+    0% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        opacity: 0
+    }
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0
+    }
+}
+
+@keyframes #{$ani-font-prefix}passing {
+    0% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        opacity: 0
+    }
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0
+    }
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}passing, .#{$ani-font-prefix}passing.animated, .#{$ani-font-prefix}passing.animated-hover:hover {
+    -webkit-animation: #{$ani-font-prefix}passing 2s linear infinite;
+    animation: #{$ani-font-prefix}passing 2s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}passing.#{$ani-font-prefix}fast, .#{$ani-font-prefix}passing.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}passing.animated.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}passing 1s linear infinite;
+    animation: #{$ani-font-prefix}passing 1s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}passing.#{$ani-font-prefix}slow, .#{$ani-font-prefix}passing.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}passing.animated.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}passing 3s linear infinite;
+    animation: #{$ani-font-prefix}passing 3s linear infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}passing-reverse {
+    0% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0
+    }
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        opacity: 0
+    }
+}
+
+@keyframes #{$ani-font-prefix}passing-reverse {
+    0% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0
+    }
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        opacity: 0
+    }
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}passing-reverse, .#{$ani-font-prefix}passing-reverse.animated, .#{$ani-font-prefix}passing-reverse.animated-hover:hover {
+    -webkit-animation: #{$ani-font-prefix}passing-reverse 2s linear infinite;
+    animation: #{$ani-font-prefix}passing-reverse 2s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}passing-reverse.#{$ani-font-prefix}fast, .#{$ani-font-prefix}passing-reverse.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}passing-reverse.animated.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}passing-reverse 1s linear infinite;
+    animation: #{$ani-font-prefix}passing-reverse 1s linear infinite
+}
+
+.#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}passing-reverse.#{$ani-font-prefix}slow, .#{$ani-font-prefix}passing-reverse.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}passing-reverse.animated.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}passing-reverse 3s linear infinite;
+    animation: #{$ani-font-prefix}passing-reverse 3s linear infinite
+}
+
+@-webkit-keyframes #{$ani-font-prefix}burst {
+    0% {
+        opacity: .6
+    }
+    50% {
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes #{$ani-font-prefix}burst {
+    0% {
+        opacity: .6
+    }
+    50% {
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.#{$ani-font-prefix}burst.animated, .#{$ani-font-prefix}burst.animated-hover:hover, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}burst {
+    -webkit-animation: #{$ani-font-prefix}burst 2s infinite linear;
+    animation: #{$ani-font-prefix}burst 2s infinite linear
+}
+
+.#{$ani-font-prefix}burst.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}burst.animated.#{$ani-font-prefix}fast, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}burst.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}burst 1s infinite linear;
+    animation: #{$ani-font-prefix}burst 1s infinite linear
+}
+
+.#{$ani-font-prefix}burst.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}burst.animated.#{$ani-font-prefix}slow, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}burst.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}burst 3s infinite linear;
+    animation: #{$ani-font-prefix}burst 3s infinite linear
+}
+
+@-webkit-keyframes #{$ani-font-prefix}falling {
+    0% {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        opacity: 0
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translateY(50%);
+        transform: translateY(50%);
+        opacity: 0
+    }
+}
+
+@keyframes #{$ani-font-prefix}falling {
+    0% {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        opacity: 0
+    }
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: translateY(50%);
+        transform: translateY(50%);
+        opacity: 0
+    }
+}
+
+.#{$ani-font-prefix}falling.animated, .#{$ani-font-prefix}falling.animated-hover:hover, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}falling {
+    -webkit-animation: #{$ani-font-prefix}falling 2s linear infinite;
+    animation: #{$ani-font-prefix}falling 2s linear infinite
+}
+
+.#{$ani-font-prefix}falling.animated-hover.#{$ani-font-prefix}fast:hover, .#{$ani-font-prefix}falling.animated.#{$ani-font-prefix}fast, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}falling.#{$ani-font-prefix}fast {
+    -webkit-animation: #{$ani-font-prefix}falling 1s linear infinite;
+    animation: #{$ani-font-prefix}falling 1s linear infinite
+}
+
+.#{$ani-font-prefix}falling.animated-hover.#{$ani-font-prefix}slow:hover, .#{$ani-font-prefix}falling.animated.#{$ani-font-prefix}slow, .#{$ani-font-prefix}parent.animated-hover:hover > .#{$ani-font-prefix}falling.#{$ani-font-prefix}slow {
+    -webkit-animation: #{$ani-font-prefix}falling 3s linear infinite;
+    animation: #{$ani-font-prefix}falling 3s linear infinite
+}

@@ -1,0 +1,106 @@
+:root {
+  --vtpos-main-color: #{$main_color};
+  --vtpos-loading-1st-circle: #fff;
+  --vtpos-menu-border: #{$menu_border_color};
+  --vtpos-pay-bg:#{darken($main_color,30)};
+  --vtpos-pay-color:#fff;
+  --vtpos-pay-hover-bg:#{darken($main_color,35)};
+  --vtpos-cart-footer-border-radius:15px;
+  --vtpos-global-border:#{$cart_item_border_color};
+  --vtpos-menu-active-color: #{$menu_active_color};
+  --vtpos-menu-font-color: #{$menu_font_color};
+  --vtpos-menu-width: 120px;
+
+  //cart panel
+  --vtpos-cart-panel-width: #{$cart_panel_width};
+  @media all and (min-width: 400px) and (max-width: 1024px) {
+    --vtpos-cart-panel-width:370px;
+  }
+
+  @media all and (max-width: 399px) {
+    --vtpos-cart-panel-width:100%;
+  }
+  --vtpos-cart-panel-bg: #{$cart_panel_bg};
+  --vtpos-cart-header-left-color: #{$cart_header_left_color};
+  --vtpos-cart-header-right-color: #{$cart_header_right_color};
+  --vtpos-cart-header-logo-border-color: #{$cart_header_logo_border-color};
+
+  --vtpos-cart-item-border-color: #{$cart_item_border_color};
+  --vtpos-cart-item-font-color: #{$cart_item_font_color};
+  //search panel
+  --vtpos-search-panel-bg: #{$search_panel_bg};
+  --vtpos-search-input-panel-bg: #{$search_input_panel_bg};
+  --vtpos-search-input-panel-bg-error: #{$search_input_panel_bg_error};
+  --vtpos-search-panel-btn-color: #{$search_panel_btn_color};
+  --vtpos-search-panel-btn-bg-color: #{$search_panel_btn_bg_color};
+  --vtpos-search-panel-offline-order-bg-color: #{$search_panel_btn_offline-order-bg-color};
+  --vtpos-search-panel-offline-order-color: #{$search_panel_btn_offline-order-color};
+  --vtpos-search-panel-input-text-color: #{$search_panel_input_text_color};
+  //category panel
+  --vtpos-category-panel-btn-bg:#{$category_panel_btn_bg};
+  --vtpos-category-panel-btn-active-color:#{$category_panel_btn_active_color};
+
+  //product container
+  --vtpos-p-ctnr-ml: #{$cart_panel_width };
+  --vtpos-p-ctnr-ml-hm: #{$cart_panel_width}; //hide menu
+
+  --vtpos-p-ctnr-item-badge-shadow-color: #{$item_badge_shadow_color};
+  --vtpos-p-ctnr-item-del-price-color: #{$item_del_price_color};
+
+  --vtpos-p-ctnr-item-radio-btn-border-color: #{$item_radio_btn_border_color};
+  --vtpos-middle-button-bg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 375 80'%3E%3Ctitle%3Emiddle-button-bg%3C/title%3E%3Cg id='Layer_2'%3E%3Cg id='Layer_1-2'%3E%3Cpath fill='#{str-replace($menu_active_color,'#','%23')}' d='M187,40a39.94,39.94,0,0,0,31.85-15.79C227.54,12.78,238.64,0,253,0H375V80H0V0H121c14.36,0,25.46,12.78,34.15,24.21A39.94,39.94,0,0,0,187,40Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  //add product modal
+  --vtpos-input-border-color:#{$input-focus-border-color};
+
+// buttons
+  --vtpos-theme-btn-color: #{$main_color};
+  --vtpos-theme-hover-color: #{$menu_active_color};
+  --vtpos-theme-btn-border: #{$menu_border_color};
+  --vtpos-theme-btn-font-color: #{$menu_font_color};
+  --vtpos-theme-del-btn-font-color: #{$menu_font_color};
+  --vtpos-theme-del-btn-color: #{$theme-del-btn-color};
+  --vtpos-theme-del-btn-border: #{$theme-del-btn-border};
+  --vtpos-theme-del-btn-hover: #{$theme-del-btn-hover};
+
+  //elite grid roots
+  --eg-pg-btn-bg:var(--vtpos-theme-btn-color);
+
+
+
+  /*New Variable*/
+  --vtpos-button-disable-color: #{$button_disable_color};
+  --vtpos-card-panel-item-hvr-color: #{$cart_panel_item_hvr_color};
+  --vtpos-calculator-operator-btn-bg: #{$calculator_operator_btn_bg};
+  --vtpos-calculator-number-btn-bg: #{$calculator_number_btn_bg};
+  --vtpos-card-shadow-color: #{$cart_shadow_clr};
+  --vtpos-text-link-color: #{$text_link_clr};
+  //--vtpos-dark-mood-font-color: #8d94b3;
+
+  //profile nav panel
+  --vtpos-theme-profile-li-bg:#{$theme-profile-li-bg};
+
+  //form focus clr
+  --vtpos-theme-form-focus-clr:#{$theme-form-focus-clr};
+  //Counter btn color
+  --vtpos-theme-counter-btn-clr:#{$main_color};
+
+  // Report Panel
+
+  //--vtpos-report-option-bg:#{$report-option-bg};
+  --vtpos-report-option-bg:#{lighten($main_color,30)};
+  --vtpos-report-option-bg-active:#{lighten($main_color,10)};
+  --vtpos-report-option-label:#{lighten($main_color,5)};
+  --vtpos-btn-bg-hover:#{darken($main_color,10)};
+  --vtpos-btn-bg-color:#{$main_color};
+}
+
+/*
+@font-face {
+  font-family: 'VT323';
+  src: url("../fonts/Hypermarket-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+

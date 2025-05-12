@@ -1,0 +1,116 @@
+.user-locked-panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(33, 37, 41, 0.59);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  input,button{
+    outline:none !important;
+    box-shadow: none !important;
+  }
+  >.card {
+    .card-header{
+      background: none;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 5px;
+      padding-left: 1rem;
+    }
+    max-width: 600px;
+    @include upto_large_mobile{
+      width: 95%;
+    }
+    &.info{
+      max-width: 950px;
+      width: 95%;
+      .msg-pnl {
+        >ul{
+          >li{
+            display: flex;
+          }
+        }
+      }
+    }
+    .input-group.password {
+      border-radius: 50px !important;
+      border:1px solid var(--vtpos-global-border);
+      overflow: hidden;
+      padding: 5px;
+      >input, >button {
+       border:none;
+        border-radius: 50px !important;
+      }
+      >button{
+        margin-left: 5px !important;
+      }
+    }
+    .profile-img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--vtpos-search-panel-btn-color);
+      background: #fff;
+      position: relative;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    .card-body{
+      .msg-pnl{
+        ul{
+          list-style: none;
+        }
+      }
+      div{
+        .sign-in-another{
+          color: #0000EE;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.user-locked-panel.outlet-panel{
+  z-index: 9;
+  .card.choose-outlet-panel{
+    max-width: 400px;
+    width: 95%;
+    .multiselect-sm.scroll-hidden.scroll-hidden-clear{
+      .multiselect-clear{
+        display: unset !important;
+      }
+    }
+    .current-bal-pnl{
+      border: 1px solid #2563eb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .card-body{
+      .outlet-logout{
+
+        i{
+          cursor: pointer;
+          &:hover{
+            color: red;
+          }
+        }
+
+        .v-popper--has-tooltip {
+          color: unset;
+        }
+      }
+    }
+  }
+}

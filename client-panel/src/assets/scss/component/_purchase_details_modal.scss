@@ -1,0 +1,103 @@
+@media all {
+  .details-modal{
+    .modal-body{
+      .purchase-details{
+        padding: 10px;
+        border-radius: 10px;
+        .pd-header{
+          display: flex;
+          display: -webkit-flex;
+          justify-content: space-between;
+          -webkit-justify-content: space-between;
+          margin-bottom: 20px;
+          .pd-head-l{
+            .pd-outlet{
+              font-size: 20px;
+              font-weight: bold;
+            }
+            .pd-date{
+              font-size: 14px;
+            }
+          }
+          .pd-head-r{
+            text-align: right;
+            .pd-no{
+              font-size: 20px;
+              font-weight: bold;
+            }
+            .pd-pay-status{
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
+        }
+        .pd-body{
+          .details-title{
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 2px solid #ccc;
+          }
+          .table{
+            color: #556268;
+            thead tr{
+              border-bottom: 2px solid #ccc;
+            }
+          }
+          .details-ul{
+            background: #dee2e629;
+            padding: 0px;
+            list-style: none;
+            li{
+              .item-container{
+                display: flex;
+                flex-direction: column;
+                .item-description{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  font-size: 14px;
+                  .item-properties{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    width: 160px;
+                  }
+                }
+              }
+              border-bottom: 1px solid #ccc;
+            }
+            li:first-child{
+              border-top: 1px solid #ccc;
+            }
+          }
+        }
+        .pd-footer{
+          .pd-info{
+            display: flex;
+            justify-content: space-between;
+            .exp-total{
+              .fst-italic{
+                font-size: 14px;
+              }
+            }
+            .exp-details{
+              display: flex;
+              flex-direction: column;
+              width: 50%;
+              div{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #ccc;
+              }
+              div:last-child{
+                border-bottom: none;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

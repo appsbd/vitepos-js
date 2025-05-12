@@ -1,0 +1,109 @@
+.item-container{
+  .card{
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+    .item-badge{
+      position: absolute;
+      left: 15px;
+      top:15px;
+      display: block;
+      background: #fff;
+      border-radius: 15px;
+      min-width: 50px;
+      @include align-middle-center();
+      box-shadow: 0 0 15px -5px var(--vtpos-p-ctnr-item-badge-shadow-color);
+      font-size: 14px;
+      line-height: 29px;
+    }
+    .add-to-cart{
+      position: absolute;
+      display: flex;
+      right: 15px;
+      top:15px;
+      background: #fff;
+      width:30px;
+      height: 30px;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 100%;
+      box-shadow: 0 0 15px -5px var(--vtpos-p-ctnr-item-badge-shadow-color);
+      cursor: pointer;
+      @include apbd_transition();
+      //opacity: 1;
+      &:hover{
+        background: var(--vtpos-main-color) ;
+        color: #fff ;
+      }
+    }
+    /*&:hover{
+      .add-to-cart{
+        opacity: 1;
+      }
+    }*/
+    .product-img{
+      height: 150px;
+      padding-bottom: 10px;
+      >img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+
+    .card-text{
+      color: var(--vtpos-p-ctnr-item-del-price-color);
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: bold;
+    }
+    .ad-price{
+      text-align: left;
+      font-size: 14px;
+      display: flex;
+      text-decoration: none;
+      flex-direction: row-reverse;
+      justify-content: start;
+      align-items: center;
+      font-weight: bold;
+      del{
+        font-size: 12px;
+        margin-left: 5px;
+        margin-top: 2px;
+        color: var(--vtpos-p-ctnr-item-del-price-color);
+      }
+      ins{
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+.demo-card{
+  .card-img-demo{
+    height: 150px;
+    background: #cccccc4d;
+    border-radius: 8px;
+    margin: 10px 10px;
+  }
+  .card-body{
+    padding:10px;
+    .card-text{
+      background: #ccc;
+      width: 90%;
+      height: 15px;
+      border-radius: 5px
+    }
+    .card-price{
+      height: 15px;
+      background: #cccccc6b;
+      border-radius: 5px;
+      width: 70%;
+      margin-bottom: 15px;
+    }
+  }
+}

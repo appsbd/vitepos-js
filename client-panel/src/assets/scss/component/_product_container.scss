@@ -1,0 +1,26 @@
+.main-container {
+
+  .main-body {
+    .product-container
+    {
+      padding-left: 10px;
+      width: calc(100% - var(--vtpos-cart-panel-width));
+      .item-container{
+        padding: 0px 15px 15px 25px;
+        height: calc(100% - 140px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-left: -20px;
+        margin-top: -15px;
+      }
+    }
+  }
+
+  &.hide-menu ,&.no-menu{
+    .main-body {
+      .product-container {
+
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+
+  .ad-radio {
+    position: relative;
+      input{
+        visibility: hidden;
+        position: absolute;
+      }
+      input+label{
+        border:1px solid var(--vtpos-p-ctnr-item-radio-btn-border-color);
+        margin: 2px;
+        padding: 6px 10px;
+        @include border-radius(3px);
+        font-size: 12px;
+        min-width: 35px;
+        text-align: center;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      input:disabled+label{
+        background:var(--vtpos-p-ctnr-item-radio-btn-border-color);
+        opacity: 0.5;
+      }
+      input:checked+label{
+        background: var(--vtpos-main-color);
+        color: #fff;
+        position: relative;
+
+        &:after{
+          content:'\2713';
+          position: absolute;
+          right: -1px;
+          bottom: -2px;
+          color:var(--vtpos-main-color);;
+          z-index: 9;
+        }
+        &:before{
+
+            content: '';
+            position: absolute;
+            right: -13px;
+            bottom: -9px;
+            width: 25px;
+            height: 21px;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.8);
+            transform: rotate(-44deg);
+
+        }
+      }
+  }

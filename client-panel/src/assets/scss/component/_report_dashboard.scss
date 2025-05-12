@@ -1,0 +1,133 @@
+.report-module {
+  .report-pnl {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.report-option + :checked {
+  background: var(--vtpos-report-option-bg-active, #d9efff);
+}
+
+.report-option {
+  background: var(--vtpos-report-option-bg, #F0F4FF);
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &:hover {
+    background: var(--vtpos-report-option-bg-active, #d9efff);
+  }
+
+  input[type=radio], input[type=checkbox] {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+
+    &:checked + label {
+      background: var(--vtpos-report-option-bg-active, #d9efff);
+    }
+  }
+
+  label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    padding: 10px;
+    border-radius: inherit;
+
+    .report-option-label {
+      color: #ffffff;
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+
+    .report-option-label ~ i {
+      background: var(--vtpos-report-option-label);
+      height: 20px;
+      padding: 2px;
+      border-radius: 5px;
+    }
+
+    .report-option-amount {
+      color: #000;
+      font-weight: normal;
+      font-size: 16px;
+      margin-bottom: 0px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+}
+
+
+.ps {
+  &.report-dashboard-pnl {
+    height: calc(100vh - 175px);
+
+    .card {
+      max-height: 615px;
+    }
+  }
+
+  @media all and (max-width: 1084px) {
+    &.report-dashboard-pnl {
+      height: calc(100vh - 226px);
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    &.report-dashboard-pnl {
+      height: calc(100vh - 240px);
+    }
+  }
+  @media all and (max-width: 575px) {
+    &.report-dashboard-pnl {
+      height: calc(100vh - 290px);
+    }
+  }
+}
+
+.small-devices {
+  .ps {
+    &.report-dashboard-pnl {
+      .report-chart-ctr {
+        @media all and (max-width: 769px) {
+          min-height: 200px !important;
+        }
+      }
+    }
+
+
+  }
+}
+
+.apbd-report-data-table {
+  &.apbd-body-content {
+    height: calc(-210px + 100vh) !important;
+  }
+
+  @media all and (max-width: 767px) {
+    &.apbd-body-content {
+      height: calc(-290px + 100vh) !important;
+    }
+  }
+  @media all and (max-width: 612px) {
+    &.apbd-body-content {
+      height: calc(-380px + 100vh) !important;
+    }
+  }
+}
+
+
+.apbd-text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

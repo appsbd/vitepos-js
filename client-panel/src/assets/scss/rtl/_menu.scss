@@ -1,0 +1,20 @@
+.main-container{
+  .menu-bar{
+    .ps{
+      .nav {
+        padding-right: 0;
+      }
+    }
+    @include upto_small_device(){
+       left: unset;
+       right: 0;
+     }
+  }
+
+  &.hide-menu ,&.no-menu{
+    .menu-bar {
+      margin-left: unset !important;
+      margin-right: calc(var(--vtpos-menu-width) * -1);
+    }
+  }
+}

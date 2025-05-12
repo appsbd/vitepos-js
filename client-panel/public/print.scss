@@ -1,0 +1,392 @@
+@print {
+  @page :footer {
+    display: none
+  }
+
+  @page :header {
+    display: none
+  }
+}
+@media print {
+  html,body {
+    margin: 0;
+  }
+  .payment-note{
+    display:none !important;
+  }
+  .order-barcode{
+    display: unset !important;
+  }
+  .total-row {
+    &.hide{
+      display:none !important;
+    }
+  }
+  .hide-on-print{
+    display:none !important;
+  }
+}
+/*@media all {
+  body {
+    -webkit-print-color-adjust: exact !important;
+
+  }*/
+  body {
+  //-webkit-print-color-adjust: exact !important;
+  }
+
+@page {
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+  position: relative;
+}
+.modal-content{
+  .invoice-POS {
+    padding:0 !important;
+  }
+}
+  .invoice-POS {
+    position: relative;
+    padding: 3mm;
+    @media print {
+      padding-left: var(--vt-pos-invoice-page-ps,3mm);
+      padding-right: var(--vt-pos-invoice-page-pe,3mm);
+      margin: 0 !important;
+    }
+    max-width: 100%;
+    background: #FFF;
+    font-family :Arial,Vrinda,system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    &,*{
+      color:#000 !important;
+    }
+    .quillWrapper{
+      width: 100%;
+    }
+    .ql-align-center{
+      text-align: center;
+    }
+    .ql-align-justify{
+      text-align: justify;
+    }
+    .ql-align-right{
+      text-align: right;
+    }
+    h1 {
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 13px;
+    }
+
+    h3 {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 2em;
+    }
+
+    .custom-info {
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+      padding-top: 2px;
+
+      .outlet-info {
+        h2 {
+          margin: 0;
+        }
+      }
+
+      .customer-info {
+        *{
+          font-size: var(--vt-pos-invoice-font-size,10px);
+        }
+        h2 {
+          margin: 0;
+        }
+      }
+    }
+
+    p {
+      font-size: var(--vt-pos-invoice-font-size,10px);
+      line-height: calc(var(--vt-pos-invoice-font-size,10px) + 4px);
+      margin: 0;
+    }
+
+    .invoice-header, #mid, #bot { /* Targets all id with 'col-' */
+      border-bottom: 1px solid rgba(0, 0, 0, 0.52);
+    }
+    .unit-price{
+      white-space: nowrap;
+    }
+    .item-dis-price{
+      text-align: right;
+      font-size: var(--vt-pos-invoice-font-size-depns,8px);
+      font-style: italic;
+    }
+    .invoice-header {
+      .logo-pnl{
+        .invoice-logo{
+          max-width: 100px;
+          max-height: 60px;
+          margin-bottom: 5px;
+          overflow: hidden;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          img{
+            width: 100%;
+          }
+        }
+      }
+
+      .invoice-custom-header {
+        * {
+          margin-bottom: 0;
+        }
+      }
+      .counter-info{
+        font-size: var(--vt-pos-invoice-font-size,10px);
+        text-align: center;
+      }
+      .order-info{
+        font-size: var(--vt-pos-invoice-font-size,10px);
+        display: flex;
+        justify-content: space-between;
+        padding-top:10px;
+        flex-wrap: wrap;
+        >div{
+          white-space: nowrap;
+        }
+      }
+      .ref-title{
+        font-size:12px;
+      }
+    }
+    .info {
+      display: block;
+      margin-left: 0;
+    }
+    .inv-footer-text
+    {
+      font-size: var(--vt-pos-invoice-font-size,10px);
+      font-style: italic;
+    }
+
+    .total-row{
+      display: flex;
+      justify-content: flex-end;
+      >span{
+        margin-left: 15px;
+      }
+      font-weight: bold;
+      font-size: var(--vt-pos-invoice-font-size,10px);
+    }
+    .total-row.nb{
+      font-weight: normal !important;
+    }
+    .grand-total{
+      border-top: 1px solid rgba(0, 0, 0, 0.51);
+    }
+    .refund-counter{
+      border-top: 1px solid rgba(0, 0, 0, 0.51);
+      border-bottom:none;
+    }
+
+    .total-value {
+      width: 30mm;
+      margin-left: 10px!important;
+    }
+    .total-qty {
+      width: 5mm;
+      margin-left: 10px!important;
+    }
+    .subtotal-value {
+      width: 25mm !important;
+      margin-left:0px !important;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .tabletitle {
+      &, tr, td, th {
+        border-bottom: 1px solid #000;;
+        font-size: var(--vt-pos-invoice-font-size,10px);
+      }
+      .item-head-sl{
+        padding-right: 5px;
+        width:20px;
+      }
+      .subtotal-head{
+        width:25mm;
+      }
+    }
+    .service {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.51);
+      td:last-child{
+        width:20mm;
+      }
+      td.item-qty{
+        width:5mm;
+      }
+      .item-sl{
+        position: relative;
+        p{
+          position: absolute;
+          top: 2px;
+        }
+      }
+    }
+
+    .itemtext {
+      font-size: var(--vt-pos-invoice-font-size,10px);
+    }
+
+    .invoice-footer {
+
+      font-size: var(--vt-pos-invoice-font-size-depns,8px);
+
+      margin-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      .invoice-custom-footer {
+        * {
+          margin-bottom: 0;
+          font-size: calc(var(--vt-pos-invoice-font-size,10px) - 1px);
+        }
+        p{
+          font-size: calc(var(--vt-pos-invoice-font-size,10px) - 1px);
+        }
+        &.apbd-branding{
+          display: none ;
+          margin-top: 10px;
+          font-style: italic;
+          font-size: 11px;
+          font-weight: bold;
+          &.show{
+            display: block !important;
+          }
+        }
+        &.apbd-line{
+          display: none;
+          &.show{
+            display: block !important;
+          }
+        }
+      }
+    }
+    .text-end{
+      text-align: right;
+    }
+    .text-center{
+      text-align: center;
+    }
+    .text-start{
+      text-align: left;
+    }
+    .payment-type-amount{
+      white-space: nowrap;
+      display: block;
+    }
+    .order-barcode{
+      display: none;
+      .code-position{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.bottom{
+          margin-top:10px;
+        }
+      }
+    }
+    .refund-total-info{
+      margin-top: 20px;
+      font-size: var(--vt-pos-invoice-font-size,10px);
+      font-weight: bold;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      div{
+        display: flex;
+        >span{
+          margin-right:15px;
+        }
+      }
+    }
+    .refund-panel{
+      font-size: calc(var(--vt-pos-invoice-font-size,10px) - 1px);
+      .refund-header{
+        border-bottom: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >div{
+          font-weight: bold;
+        }
+      }
+
+
+    }
+    .inv-payment-list{
+      display: flex;
+      flex-direction: column;
+      .note-pnl{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        .small-text{
+          font-size: calc(var(--vt-pos-invoice-font-size,10px) - 1px);
+          margin-left: 5px;
+        }
+        .no-wrap{
+          white-space: nowrap;
+        }
+      }
+
+    }
+    .token-footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0.5rem;
+    }
+  }
+//}
+
+
+.invoice-POS[dir="rtl"] {
+      .text-start{
+        text-align: right !important;
+      }
+      .text-end{
+        text-align: left !important;
+      }
+      .total-value {
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+        text-align: end;
+      }
+      .subtotal-value {
+        margin-left:0px !important;
+        margin-right:0px !important;
+      }
+      .total-row {
+        > span {
+          margin-left: 0px !important;
+          text-align: end;
+        }
+      }
+      .total-qty{
+        margin-right:  8px !important;
+      }
+    .refund-total-info{
+      div{
+        >span{
+          margin-left:15px;
+        }
+      }
+    }
+    }
+

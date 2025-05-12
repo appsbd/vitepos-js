@@ -1,0 +1,54 @@
+.mp-body-card{
+  margin: 0.4rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  .card-body.pi-body{
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    overflow: auto;
+    .ad-local-loader{
+      width: 100%;
+    }
+      .card{
+        border: none;
+        box-shadow: 0px 0px 5px #62626247;
+        padding: 10px;
+        margin: 10px;
+        .profile-radius{
+          border-radius: 5px 0 0 5px;
+        }
+        .profile-image{
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+          img.card-img-top{
+            width: 150px;
+            border-radius: 50%;
+          }
+        }
+        .card-body{
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          //align-items: center;
+        }
+        .card-body.pc-body{
+          padding: 1rem;
+          .needs-validation{
+            width: 300px;
+          }
+        }
+        hr{
+          color: var(--vtpos-main-color);
+        }
+      }
+  }
+}
+.vtpos-gradient{
+  background-image: linear-gradient(120deg, var(--vtpos-main-color) 50%, var(--vtpos-menu-active-color) 100%);
+}
+.vtpos-gradient-border{
+  border-color: linear-gradient(120deg, var(--vtpos-main-color) 50%, var(--vtpos-menu-active-color) 100%);
+}

@@ -1,0 +1,83 @@
+@media all {
+  .details-modal {
+    .modal-body {
+      .report-details {
+        padding: 10px;
+        border-radius: 10px;
+
+        .pd-body {
+          .details-title {
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 2px solid #ccc;
+          }
+
+          .details-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            gap: 10px;
+
+            .apbd-chart {
+              width: 80%;
+
+              &.order-chart, &.refund-chart, &.payment-chart, &.chashier-chart {
+                height: 350px;
+              }
+            }
+
+            .apbd-chart-details {
+              width: 80%;
+            }
+          }
+
+          .table {
+            color: #556268;
+
+            thead tr {
+              text-align: center;
+              border-bottom: 2px solid #ccc;
+            }
+
+            tbody tr td {
+              text-align: center;
+            }
+          }
+        }
+
+        .pd-footer {
+          .pd-info {
+            display: flex;
+            justify-content: space-between;
+
+            .exp-total {
+              .fst-italic {
+                font-size: 14px;
+              }
+            }
+
+            .exp-details {
+              display: flex;
+              flex-direction: column;
+              width: 50%;
+
+              div {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #ccc;
+              }
+
+              div:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

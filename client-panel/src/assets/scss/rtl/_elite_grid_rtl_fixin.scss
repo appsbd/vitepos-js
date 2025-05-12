@@ -1,0 +1,36 @@
+.eg-cell-action{
+  .btn-sm:last-child{
+
+  }
+}
+.eg-align-right{
+  text-align: end !important;
+}
+.eg-align-left{
+  text-align: start !important;
+}
+
+.elite-grid{
+  .eg-pagination{
+    .eg-pg-status{
+      .eg-row-select{
+        margin-right: 10px !important;
+        margin-left: 10px ;
+      }
+    }
+  }
+}
+.eg-pg-right{
+  padding-left: 5px;
+  .eg-pg-ul{
+    li{
+      &:first-child{
+        transform: rotate(180deg);
+      }
+      &:last-child {
+        transform: rotate(180deg);
+        vertical-align: 8px;
+      }
+    }
+  }
+}

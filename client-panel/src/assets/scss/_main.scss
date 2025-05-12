@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@import "mixin";
+@import "function";
+@import "component/bootstrap_print";
+@import "app-animation/app-animation";
+@import "component/vdropdown";
+@import "component/number-input";
+@import "component/radio";
+@import "component/typography";
+@import "component/common";
+//components
+@import "component/user_locked";
+@import "component/main_container";
+@import "component/menu_bar";
+@import "component/modal";
+@import "component/checkout";
+@import "component/cart_panel";
+@import "component/manageOrders";
+@import "component/product_container";
+@import "component/product_header";
+@import "component/category_panel";
+@import "component/product_item";
+@import "component/manage_customer";
+@import "component/manage_profile";
+@import "component/purchase_details_modal";
+@import "component/add_product_modal";
+@import "component/bootstrap_switch_size";
+@import "component/help_info";
+@import "component/apbd_loading_button";
+@import "component/image_radio_input";
+
+// report component
+@import "component/report_dashboard";
+@import "component/report_details_modal";
+@import "component/tab_btn";
+//mobile dashboard
+@import "component/small_device_dashboard";
+@import "component/full_screen";
+
+

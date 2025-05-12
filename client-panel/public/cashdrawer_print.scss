@@ -1,0 +1,39 @@
+@media print {
+  @page {
+    margin: 0 5mm 0 1mm;
+    padding: 0;
+  }
+  @page :footer {
+    display: none
+  }
+
+  @page :header {
+    display: none
+  }
+  html, body {
+    margin: 0;
+    padding:0;
+    font-size: 10px;
+    color: #000 !important;
+    font-family :Arial,Vrinda,system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .header {
+      padding-bottom: 5px;
+      border-bottom: 1px solid #000 !important;
+  }
+  .n-line{
+    display: block !important;
+  }
+  ul {
+    border:none !important;
+    li {
+      border-color: #000 !important;
+      margin-top:-1px;
+    }
+  }
+  .on-print-dot {
+    padding: 5mm;
+    border-bottom: 1px dotted #000;
+  }
+}
+

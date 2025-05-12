@@ -1,0 +1,137 @@
+.app-modal {
+  .modal-body {
+    position: relative;
+    .notification{
+      border-radius: 10px;
+    }
+    .modal-loader {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      position: absolute;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.59);
+        z-index: 98;
+      }
+
+      .loader-content {
+        z-index: 99;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        left: 0;
+        right: 0;
+        color: #fff;
+
+      }
+    }
+    .alert.alert-success
+    {
+      margin-top:0.5rem;
+      margin-bottom:0.5rem;
+      :first-child{
+        margin-top: 0px;
+      }
+      :last-child{
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .modal-content {
+    border-radius: 20px;
+    color: #556268;
+    select{
+      outline: none !important;
+      box-shadow: none !important;
+      border-radius: 6px;
+    }
+    label {
+      color: #374151;
+      font-size: 14px;
+    }
+
+    .multiselect {
+      border-radius: 6px;
+      min-height: 35px;
+
+      &.is-active {
+        outline: none !important;
+        box-shadow: none !important;
+        color: #212529;
+        background-color: #fff;
+        border-color: #86b7fe;
+      }
+      .multiselect-wrapper{
+        min-height: unset !important;
+      }
+
+      .multiselect-placeholder {
+        padding-right: 0px !important;
+        font-size: 13px;
+      }
+
+      .multiselect-dropdown {
+        border-radius: 6px;
+      }
+    }
+
+    .input-group, .form-control, .form-select {
+      border-radius: 6px;
+      min-height: 35px;
+    }
+
+    .input-group-sm {
+      .form-select {
+        padding-right: 2rem !important;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+
+      label.v-popper--has-tooltip {
+        color: #fff;
+        font-size: 13px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+      }
+    }
+
+    .col-sm-4 {
+      textarea.form-control-sm {
+        min-height: 102px;
+      }
+    }
+
+
+  }
+
+  @media (min-width: 1200px) {
+    .modal-xl {
+      max-width: 900px;
+    }
+  }
+  @media (min-width: 576px)  and (max-width: 991px) {
+    .modal-lg {
+      max-width: 90%;
+    }
+    .modal-xl {
+      max-width: 90%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .input-group, .form-control-md {
+      border-radius: 6px;
+      min-height: 35px;
+    }
+  }
+}

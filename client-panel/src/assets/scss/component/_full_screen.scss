@@ -1,0 +1,22 @@
+.apbd-full-screen-xs{
+  @include extra_small_device(){
+    @include full_screen();
+
+  }
+}
+.apbd-full-screen-sm{
+  @include upto_small_device(){
+    @include full_screen();
+  }
+}
+.apbd-full-screen-md{
+  @include upto_medium_device(){
+    @include full_screen();
+  }
+}
+.apbd-full-screen-lg{
+  @include upto_large_device(){
+    @include full_screen();
+  }
+}
+

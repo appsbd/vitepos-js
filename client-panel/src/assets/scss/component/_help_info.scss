@@ -1,0 +1,13 @@
+.help-info{
+  border-radius: 10px;
+  .help-tab-header
+  {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    background: #ffffff;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,23 @@
+.apbd-masonry-container {
+ // display: grid;
+  column-gap: var(--apbd-msnry-col-pad, 15px);
+  column-count: var(--apbd-msnry-col-count, 4);;
+  .apbd-masonry-item {
+    //column-count: var(--apbd-msnry-col-count, 4);
+    //grid-column: 1;
+    //grid-column: 1;
+    //grid-row: 1
+    display: inline-block;
+    width:100%;
+    margin-bottom:var(--apbd-msnry-col-pad, 15px);
+
+  }
+  img.apbd-masonry-item {
+    max-width: 100%;
+    display: block;
+    grid-row: 1 / -1;
+    grid-column: 1;
+    margin-bottom: var(--apbd-msnry-col-pad, 10px);
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+  }
+}

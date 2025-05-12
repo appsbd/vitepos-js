@@ -1,0 +1,81 @@
+.number-input{
+  outline: none !important;
+  padding: 5px;
+  .nu-header{
+    input{
+      border: none;
+      border-bottom:1px solid rgba(204, 204, 204, 0.22);
+      padding: 10px;
+      font-size: 32px;
+      line-height: 26px;
+      color: var(--vtpos-search-panel-input-text-color,#146080);
+      text-align: right;
+      width: 235px;
+      font-weight: bold;
+      outline: none !important;
+    }
+  }
+.nu-number-pad{
+    >div {
+      display: flex;
+      >button {
+        outline: none;
+         width: 100%;
+        height: 40px;
+         border: 1px solid rgba(204, 204, 204, 0.1);
+
+
+        font-size: 24px;
+        color: #484848;
+        background: var(--vtpos-search-input-panel-bg,#f4faff);
+        border-radius: 5px;
+        margin: 10px;
+        &:hover{
+          background-color: var(--vtpos-category-panel-btn-active-color,#a6daff);
+        }
+      }
+    }
+  }
+  .nu-footer{
+    display: flex;
+    border-top:1px solid rgba(204, 204, 204, 0.22);
+
+    >button {
+      margin: 10px;
+      &:hover{
+        background-color: var(--vtpos-category-panel-btn-active-color,#a2dbf2) !important;
+        color: var(--vtpos-menu-font-color,#307cbd) !important;
+      }
+      width: 100%;
+      background-color: var(--vtpos-category-panel-btn-bg,#d9efff) !important;
+      color: var(--vtpos-menu-active-color,#3fa9fc) !important;
+    }
+  }
+}
+.chek-out-module-body{
+  .number-input{
+    .nu-header{
+      border: 1px solid;
+      input{
+        width: 360px;
+      }
+    }
+    .nu-button-panel{
+      display: flex;
+      .nu-number-pad {
+        >div{
+          >button{
+            min-width: 60px;
+            width: 100%;
+          }
+        }
+      }
+      .nu-right-pad{
+        >div{
+          flex-direction: column;
+        }
+      }
+    }
+
+  }
+}

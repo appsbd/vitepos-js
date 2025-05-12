@@ -12,7 +12,6 @@ module.exports = {
     //proxy: "http://localhost/new_vitepos/"
     proxy: "http://localhost/vite-lite"
   },
-  outputDir: path.resolve(__dirname, "../../assets/"),
   lintOnSave: false,
   productionSourceMap: false,
   publicPath:'',
