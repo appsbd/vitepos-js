@@ -23,7 +23,6 @@
     "floating-vue": "^2.0.0-beta.17",
     "vee-validate": "^4.5.9",
     "vue": "^3.2.13",
-    "vue-chartkick": "^1.1.0",
     "vue-router": "^4.0.3",
     "sweetalert2": "11.4.8",
     "vue-sweetalert2": "^5.0.2",

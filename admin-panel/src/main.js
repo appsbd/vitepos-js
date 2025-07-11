@@ -27,8 +27,7 @@ import { createPinia } from "pinia";
 import { VueEditor } from "vue3-editor";
 
 import AppsbdWCHelper from "@/libraries/AppsbdWCHelper";
-import VueChartkick from 'vue-chartkick'
-import 'chartkick/chart.js'
+
 
 const pinia = createPinia();
 
