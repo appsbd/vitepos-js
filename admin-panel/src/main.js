@@ -61,5 +61,4 @@ createApp(App)
     .component('VTooltip', Tooltip)
     .component('VMenu', Menu)
     .use(gettext)
-    .use(VueChartkick)
     .mount('#AppsbdAdminPanel');

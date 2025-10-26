@@ -10,7 +10,7 @@ const plugins=[];
 module.exports = {
   devServer: {
     //proxy: "http://localhost/new_vitepos/"
-    proxy: "http://localhost/vite-lite"
+    proxy: "http://localhost/projects/new-leg"
   },
   lintOnSave: false,
   productionSourceMap: false,

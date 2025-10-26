@@ -22,7 +22,7 @@ function getProxy() {
     } else if (ips.includes('192.168.10.77')) {
       return 'http://192.168.10.77/vitepos/git/vitepos-report/'
     } else if (ips.includes('192.168.10.80')) {
-      return 'http://localhost/projects/wp-submit/'
+      return 'http://localhost/projects/new-leg'
     } else if (ips.includes('192.168.10.78')) {
       return 'http://localhost/projects/vite_rewards/'
     }

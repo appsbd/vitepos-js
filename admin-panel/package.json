@@ -13,7 +13,7 @@
     "@popperjs/core": "^2.11.5",
     "@vee-validate/rules": "^4.5.9",
     "@vueform/multiselect": "^2.3.3",
-    "axios": "^0.27.2",
+    "axios": "^1.12.2",
     "bootstrap": "^5.0.2",
     "chart.js": "^3.8.2",
     "darkmode-js": "^1.5.7",
